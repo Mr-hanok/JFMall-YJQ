@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ManJianFooterView" id="U6b-Vx-4bR" customClass="ManJianFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动说明:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9N-WL-Sar">
+                    <rect key="frame" x="10" y="5" width="52" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Yw-UV-xMv">
+                    <rect key="frame" x="35" y="19.5" width="265" height="122.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Yw-UV-xMv" firstAttribute="top" secondItem="v9N-WL-Sar" secondAttribute="bottom" id="43j-Ge-Khi"/>
+                <constraint firstAttribute="trailing" secondItem="7Yw-UV-xMv" secondAttribute="trailing" constant="20" id="T83-qd-HDs"/>
+                <constraint firstItem="v9N-WL-Sar" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="VgQ-Gk-Hyh"/>
+                <constraint firstItem="7Yw-UV-xMv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="eTg-dy-oIP"/>
+                <constraint firstItem="v9N-WL-Sar" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="m2K-SQ-5BF"/>
+                <constraint firstAttribute="bottom" secondItem="7Yw-UV-xMv" secondAttribute="bottom" constant="10" id="nMm-z3-Uqf"/>
+                <constraint firstItem="7Yw-UV-xMv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="35" id="reG-WJ-OSv"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="eTg-dy-oIP"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="descriptionLabel" destination="7Yw-UV-xMv" id="9wi-cl-7Mc"/>
+            </connections>
+            <point key="canvasLocation" x="206" y="110"/>
+        </collectionReusableView>
+    </objects>
+</document>

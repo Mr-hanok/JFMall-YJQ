@@ -1,0 +1,63 @@
+//
+//  CommunityApp-Prefix.pch
+//  CommunityApp
+//
+//  Created by issuser on 15/6/3.
+//  Copyright (c) 2015年 iss. All rights reserved.
+//
+
+#ifndef CommunityApp_CommunityApp_Prefix_pch
+#define CommunityApp_CommunityApp_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "ComDefine.h"
+#import "ComServerDefine.h"
+#import "ComUIDefine.h"
+#import <YYModel/YYModel.h>
+#import "PureLayout.h"
+#import "ComUIViewAdditions.h"
+
+#import "AppCommon.h"
+
+// UI
+#import "ComColorManager.h"
+
+
+//additions
+#import "ComNSObjectAdditions.h"
+#import "ComUIViewAdditions.h"
+#import "ComNSStringAdditions.h"
+#import "ComUIButtonAdditions.h"
+#import "ComArrayAddtions.h"
+
+/**积分商城 满减模块*/
+#import "JFCommon.h"
+
+#import "Constants.h"
+#import "Common.h"
+#import "AppToast.h"
+#import "ImageName.h"
+#import "ColorValues.h"
+#import "Strings.h"
+#import "Rects.h"
+#import "Interface.h"
+#import "LoginConfig.h"
+#import "UILabel+Price.h"
+#import "FKAlertView.h"
+#import "MobClick.h"
+#ifdef DEBUG
+#define YjqLog(...)NSLog(__VA_ARGS__)
+#else
+#define YjqLog(...)
+#endif
+
+#endif
+#define UIColorFromRGB(rgbValue)    ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0])
+#define UIColorFromRGBA(rgbValue,a)    ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)])
+#define testTel @"13716778994"
+#define testTelCode 583526
+#endif

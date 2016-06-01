@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalCenterAreaSelectViewController">
+            <connections>
+                <outlet property="table" destination="Ctd-Pw-QOC" id="tHG-0f-D98"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ctd-Pw-QOC">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="C2A-GL-Hdj"/>
+                        <outlet property="delegate" destination="-1" id="YbL-hU-UQr"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ctd-Pw-QOC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Lv-Gk-KdB"/>
+                <constraint firstAttribute="bottom" secondItem="Ctd-Pw-QOC" secondAttribute="bottom" id="TIm-ct-64j"/>
+                <constraint firstAttribute="trailing" secondItem="Ctd-Pw-QOC" secondAttribute="trailing" id="V34-fy-Vnj"/>
+                <constraint firstItem="Ctd-Pw-QOC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="efX-5J-B1M"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Ctd-Pw-QOC"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2Lv-Gk-KdB"/>
+                    <exclude reference="TIm-ct-64j"/>
+                    <exclude reference="V34-fy-Vnj"/>
+                    <exclude reference="efX-5J-B1M"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Ctd-Pw-QOC"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2Lv-Gk-KdB"/>
+                    <include reference="TIm-ct-64j"/>
+                    <include reference="V34-fy-Vnj"/>
+                    <include reference="efX-5J-B1M"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

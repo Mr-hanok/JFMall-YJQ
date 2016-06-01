@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManJianViewController">
+            <connections>
+                <outlet property="collectionView" destination="3Xv-du-RAV" id="D9P-YD-X4g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Xv-du-RAV">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jiI-0r-fyW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="c0T-Wv-jOD"/>
+                        <outlet property="delegate" destination="-1" id="kog-fy-jv6"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3Xv-du-RAV" secondAttribute="bottom" id="fON-ed-n7g"/>
+                <constraint firstItem="3Xv-du-RAV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fXX-qe-3Gb"/>
+                <constraint firstAttribute="trailing" secondItem="3Xv-du-RAV" secondAttribute="trailing" id="rWw-Er-Cfm"/>
+                <constraint firstItem="3Xv-du-RAV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t7i-tH-mhz"/>
+                <constraint firstItem="3Xv-du-RAV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zJd-EC-6FY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="3Xv-du-RAV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="fON-ed-n7g"/>
+                    <exclude reference="fXX-qe-3Gb"/>
+                    <exclude reference="rWw-Er-Cfm"/>
+                    <exclude reference="t7i-tH-mhz"/>
+                    <exclude reference="zJd-EC-6FY"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="3Xv-du-RAV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="fON-ed-n7g"/>
+                    <include reference="fXX-qe-3Gb"/>
+                    <include reference="rWw-Er-Cfm"/>
+                    <exclude reference="t7i-tH-mhz"/>
+                    <include reference="zJd-EC-6FY"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="273" y="64"/>
+        </view>
+    </objects>
+</document>

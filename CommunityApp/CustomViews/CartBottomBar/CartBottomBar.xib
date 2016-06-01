@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CartBottomBar">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40I-Ag-nNy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bz-cx-RZZ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVr-88-vQb">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title=" 购物车" image="NavCartIconNor">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="leftBtnClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="pS8-xY-MxM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXl-Fi-iaJ">
+                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="17" id="KXU-bW-OiE"/>
+                                        <constraint firstAttribute="height" constant="17" id="lir-3W-CCY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="10" backgroundImage="HintBgImg">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="KXU-bW-OiE"/>
+                                            <exclude reference="lir-3W-CCY"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                        <mask key="constraints">
+                                            <include reference="KXU-bW-OiE"/>
+                                            <include reference="lir-3W-CCY"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="lVr-88-vQb" firstAttribute="top" secondItem="0bz-cx-RZZ" secondAttribute="top" id="0hc-hB-ch2"/>
+                                <constraint firstAttribute="bottom" secondItem="lVr-88-vQb" secondAttribute="bottom" id="6ED-Im-Xr3"/>
+                                <constraint firstItem="pXl-Fi-iaJ" firstAttribute="leading" secondItem="0bz-cx-RZZ" secondAttribute="leading" constant="50" id="FER-Ux-VOS"/>
+                                <constraint firstAttribute="centerY" secondItem="pXl-Fi-iaJ" secondAttribute="centerY" constant="8" id="Gi8-Su-60H"/>
+                                <constraint firstAttribute="trailing" secondItem="lVr-88-vQb" secondAttribute="trailing" id="N4X-nI-Kj8"/>
+                                <constraint firstItem="lVr-88-vQb" firstAttribute="leading" secondItem="0bz-cx-RZZ" secondAttribute="leading" id="hVn-ta-hLJ"/>
+                                <constraint firstAttribute="width" constant="150" id="ntY-Y2-yMM"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="lVr-88-vQb"/>
+                                    <exclude reference="pXl-Fi-iaJ"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="ntY-Y2-yMM"/>
+                                    <exclude reference="0hc-hB-ch2"/>
+                                    <exclude reference="6ED-Im-Xr3"/>
+                                    <exclude reference="N4X-nI-Kj8"/>
+                                    <exclude reference="hVn-ta-hLJ"/>
+                                    <exclude reference="FER-Ux-VOS"/>
+                                    <exclude reference="Gi8-Su-60H"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="lVr-88-vQb"/>
+                                    <include reference="pXl-Fi-iaJ"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="ntY-Y2-yMM"/>
+                                    <include reference="0hc-hB-ch2"/>
+                                    <include reference="6ED-Im-Xr3"/>
+                                    <include reference="N4X-nI-Kj8"/>
+                                    <include reference="hVn-ta-hLJ"/>
+                                    <include reference="FER-Ux-VOS"/>
+                                    <include reference="Gi8-Su-60H"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：288.90" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4O-m3-dYd">
+                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="p4O-m3-dYd" firstAttribute="top" secondItem="40I-Ag-nNy" secondAttribute="top" id="AN1-Ts-CNn"/>
+                        <constraint firstAttribute="trailing" secondItem="p4O-m3-dYd" secondAttribute="trailing" constant="8" id="BD2-A4-FkY"/>
+                        <constraint firstItem="0bz-cx-RZZ" firstAttribute="top" secondItem="40I-Ag-nNy" secondAttribute="top" id="Nod-Nt-GCF"/>
+                        <constraint firstItem="p4O-m3-dYd" firstAttribute="leading" secondItem="40I-Ag-nNy" secondAttribute="leading" constant="8" id="bqq-fF-KNo"/>
+                        <constraint firstAttribute="bottom" secondItem="0bz-cx-RZZ" secondAttribute="bottom" id="fvv-sr-MU7"/>
+                        <constraint firstAttribute="centerX" secondItem="0bz-cx-RZZ" secondAttribute="centerX" id="nw4-tI-G6K"/>
+                        <constraint firstAttribute="bottom" secondItem="p4O-m3-dYd" secondAttribute="bottom" id="w2e-Ue-CEt"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="0bz-cx-RZZ"/>
+                            <exclude reference="p4O-m3-dYd"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="AN1-Ts-CNn"/>
+                            <exclude reference="BD2-A4-FkY"/>
+                            <exclude reference="bqq-fF-KNo"/>
+                            <exclude reference="w2e-Ue-CEt"/>
+                            <exclude reference="Nod-Nt-GCF"/>
+                            <exclude reference="fvv-sr-MU7"/>
+                            <exclude reference="nw4-tI-G6K"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="0bz-cx-RZZ"/>
+                            <include reference="p4O-m3-dYd"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="AN1-Ts-CNn"/>
+                            <include reference="BD2-A4-FkY"/>
+                            <include reference="bqq-fF-KNo"/>
+                            <include reference="w2e-Ue-CEt"/>
+                            <include reference="Nod-Nt-GCF"/>
+                            <include reference="fvv-sr-MU7"/>
+                            <include reference="nw4-tI-G6K"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ye0-eA-Ay0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="new-ec-3YY">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="立即结算" backgroundImage="YellowBtnBgNor">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="YellowBtnBgPre"/>
+                            <connections>
+                                <action selector="rightBtnClickHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="WOV-Sv-w45"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="new-ec-3YY" firstAttribute="top" secondItem="ye0-eA-Ay0" secondAttribute="top" id="1AK-kp-1Ju"/>
+                        <constraint firstAttribute="trailing" secondItem="new-ec-3YY" secondAttribute="trailing" id="O84-Vn-vUC"/>
+                        <constraint firstAttribute="bottom" secondItem="new-ec-3YY" secondAttribute="bottom" id="h6w-5p-xtt"/>
+                        <constraint firstItem="new-ec-3YY" firstAttribute="leading" secondItem="ye0-eA-Ay0" secondAttribute="leading" id="lx2-8J-aD5"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="new-ec-3YY"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="1AK-kp-1Ju"/>
+                            <exclude reference="O84-Vn-vUC"/>
+                            <exclude reference="h6w-5p-xtt"/>
+                            <exclude reference="lx2-8J-aD5"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="new-ec-3YY"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="1AK-kp-1Ju"/>
+                            <include reference="O84-Vn-vUC"/>
+                            <include reference="h6w-5p-xtt"/>
+                            <include reference="lx2-8J-aD5"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="40I-Ag-nNy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AnB-Yk-HPo"/>
+                <constraint firstItem="40I-Ag-nNy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ca2-vv-4BW"/>
+                <constraint firstAttribute="bottom" secondItem="ye0-eA-Ay0" secondAttribute="bottom" id="FiA-AI-CBj"/>
+                <constraint firstAttribute="trailing" secondItem="ye0-eA-Ay0" secondAttribute="trailing" id="Rxh-sO-Pw0"/>
+                <constraint firstItem="ye0-eA-Ay0" firstAttribute="leading" secondItem="40I-Ag-nNy" secondAttribute="trailing" id="UB0-HU-ErS"/>
+                <constraint firstAttribute="bottom" secondItem="40I-Ag-nNy" secondAttribute="bottom" id="UGs-Zk-NqK"/>
+                <constraint firstItem="ye0-eA-Ay0" firstAttribute="height" secondItem="40I-Ag-nNy" secondAttribute="height" id="ZRc-be-5bd"/>
+                <constraint firstItem="ye0-eA-Ay0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="to9-Yu-PvU"/>
+                <constraint firstItem="ye0-eA-Ay0" firstAttribute="width" secondItem="40I-Ag-nNy" secondAttribute="width" id="z5Y-N1-PW7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="40I-Ag-nNy"/>
+                    <exclude reference="ye0-eA-Ay0"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="AnB-Yk-HPo"/>
+                    <exclude reference="Ca2-vv-4BW"/>
+                    <exclude reference="UGs-Zk-NqK"/>
+                    <exclude reference="FiA-AI-CBj"/>
+                    <exclude reference="Rxh-sO-Pw0"/>
+                    <exclude reference="UB0-HU-ErS"/>
+                    <exclude reference="ZRc-be-5bd"/>
+                    <exclude reference="to9-Yu-PvU"/>
+                    <exclude reference="z5Y-N1-PW7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="40I-Ag-nNy"/>
+                    <include reference="ye0-eA-Ay0"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="AnB-Yk-HPo"/>
+                    <include reference="Ca2-vv-4BW"/>
+                    <include reference="UGs-Zk-NqK"/>
+                    <include reference="FiA-AI-CBj"/>
+                    <include reference="Rxh-sO-Pw0"/>
+                    <include reference="UB0-HU-ErS"/>
+                    <include reference="ZRc-be-5bd"/>
+                    <include reference="to9-Yu-PvU"/>
+                    <include reference="z5Y-N1-PW7"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="leftCartCountBtn" destination="pXl-Fi-iaJ" id="fGh-O2-V70"/>
+                <outlet property="leftCartView" destination="0bz-cx-RZZ" id="Tuo-Pq-L1v"/>
+                <outlet property="leftLabel" destination="p4O-m3-dYd" id="jby-nY-3y3"/>
+                <outlet property="rightBtn" destination="new-ec-3YY" id="Lup-sn-oEi"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="HintBgImg" width="10" height="10"/>
+        <image name="NavCartIconNor" width="24" height="21"/>
+        <image name="YellowBtnBgNor" width="180" height="54"/>
+        <image name="YellowBtnBgPre" width="180" height="54"/>
+    </resources>
+</document>

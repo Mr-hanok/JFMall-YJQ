@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-vC-oMG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-Q3-MMh">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="abC-01-Mc4"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="78U-LG-kCc">
+                            <rect key="frame" x="0.0" y="19" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="B9x-0z-5nT"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="RAB-Q3-MMh" firstAttribute="leading" secondItem="nKh-vC-oMG" secondAttribute="leading" id="2Mm-IN-van"/>
+                        <constraint firstAttribute="bottom" secondItem="78U-LG-kCc" secondAttribute="bottom" id="Enm-nU-k6t"/>
+                        <constraint firstItem="78U-LG-kCc" firstAttribute="leading" secondItem="nKh-vC-oMG" secondAttribute="leading" id="K0a-dG-Gec"/>
+                        <constraint firstItem="RAB-Q3-MMh" firstAttribute="top" secondItem="nKh-vC-oMG" secondAttribute="top" id="baa-Zl-vBf"/>
+                        <constraint firstAttribute="trailing" secondItem="78U-LG-kCc" secondAttribute="trailing" id="iFF-jV-3jO"/>
+                        <constraint firstAttribute="trailing" secondItem="RAB-Q3-MMh" secondAttribute="trailing" id="lGV-Rs-h6Q"/>
+                        <constraint firstAttribute="height" constant="20" id="oCh-UX-ALE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nKh-vC-oMG" secondAttribute="trailing" id="3do-4w-arn"/>
+                <constraint firstItem="nKh-vC-oMG" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="SS7-f3-H3O"/>
+                <constraint firstAttribute="bottom" secondItem="nKh-vC-oMG" secondAttribute="bottom" id="UaS-fg-pnu"/>
+                <constraint firstItem="nKh-vC-oMG" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="lik-W8-LGj"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DoorToDoorServiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bza-dY-t0A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseKeepSildeDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-uj-fDj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Neq-Fa-uhf">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPd-5x-HSj">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.28627450980392155" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5m3-1E-98m"/>
+                                    <constraint firstAttribute="height" constant="30" id="6Rl-L1-h8K"/>
+                                    <constraint firstItem="gPd-5x-HSj" firstAttribute="top" secondItem="Neq-Fa-uhf" secondAttribute="top" id="BBJ-KR-tcI"/>
+                                    <constraint firstItem="gPd-5x-HSj" firstAttribute="leading" secondItem="Neq-Fa-uhf" secondAttribute="leading" id="BGY-cZ-kDS"/>
+                                    <constraint firstAttribute="bottom" secondItem="gPd-5x-HSj" secondAttribute="bottom" id="QlC-QI-reU"/>
+                                    <constraint firstAttribute="trailing" secondItem="gPd-5x-HSj" secondAttribute="trailing" id="dg6-eK-A6p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bE6-uj-fDj" secondAttribute="trailing" id="9O4-Dz-Gs0"/>
+                            <constraint firstAttribute="height" constant="154" id="C7m-Ua-SlM"/>
+                            <constraint firstAttribute="bottom" secondItem="bE6-uj-fDj" secondAttribute="bottom" id="UOa-6U-2Wf"/>
+                            <constraint firstItem="bE6-uj-fDj" firstAttribute="top" secondItem="bza-dY-t0A" secondAttribute="top" id="cLb-L4-HNU"/>
+                            <constraint firstItem="Neq-Fa-uhf" firstAttribute="leading" secondItem="bza-dY-t0A" secondAttribute="leading" id="ca8-1m-Dgk"/>
+                            <constraint firstItem="Neq-Fa-uhf" firstAttribute="top" secondItem="bza-dY-t0A" secondAttribute="top" id="dbw-tN-IaZ"/>
+                            <constraint firstItem="bE6-uj-fDj" firstAttribute="leading" secondItem="bza-dY-t0A" secondAttribute="leading" id="qPk-tT-KV9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="bza-dY-t0A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OAm-YH-mmx"/>
+                    <constraint firstAttribute="trailing" secondItem="bza-dY-t0A" secondAttribute="trailing" id="SPE-tT-YIn"/>
+                    <constraint firstItem="bza-dY-t0A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VGu-lC-wLp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="heightConstraint" destination="C7m-Ua-SlM" id="ewY-lJ-zdF"/>
+                <outlet property="imageViewConstraint" destination="C7m-Ua-SlM" id="WIe-7j-2c3"/>
+                <outlet property="labelView" destination="Neq-Fa-uhf" id="8dE-o5-tyx"/>
+                <outlet property="serviceImageView" destination="bE6-uj-fDj" id="VMp-MH-pep"/>
+                <outlet property="serviceNameLabel" destination="gPd-5x-HSj" id="4IP-mR-QuG"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="273.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HouseKeepSildeDefaultImg" width="1080" height="415"/>
+    </resources>
+</document>

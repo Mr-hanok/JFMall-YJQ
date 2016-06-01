@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreServicesViewController">
+            <connections>
+                <outlet property="collectionView" destination="0uB-iu-L7L" id="wNZ-ZK-SqV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0uB-iu-L7L">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ruo-jf-T8T">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5Oz-k2-lAc"/>
+                        <outlet property="delegate" destination="-1" id="x45-pS-8iK"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0uB-iu-L7L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9ZS-cM-sZw"/>
+                <constraint firstItem="0uB-iu-L7L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="S0l-dh-Yqb"/>
+                <constraint firstAttribute="bottom" secondItem="0uB-iu-L7L" secondAttribute="bottom" id="TTD-ye-wFs"/>
+                <constraint firstAttribute="trailing" secondItem="0uB-iu-L7L" secondAttribute="trailing" constant="6" id="ib0-65-p1o"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="0uB-iu-L7L"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9ZS-cM-sZw"/>
+                    <exclude reference="S0l-dh-Yqb"/>
+                    <exclude reference="TTD-ye-wFs"/>
+                    <exclude reference="ib0-65-p1o"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="0uB-iu-L7L"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9ZS-cM-sZw"/>
+                    <include reference="S0l-dh-Yqb"/>
+                    <include reference="TTD-ye-wFs"/>
+                    <include reference="ib0-65-p1o"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

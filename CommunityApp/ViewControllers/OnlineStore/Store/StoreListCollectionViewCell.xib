@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreListCollectionViewCell" id="gTV-IL-0wX" customClass="StoreListCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="102" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoreGoodsImg" translatesAutoresizingMaskIntoConstraints="NO" id="Lkz-p9-gsX">
+                        <rect key="frame" x="2" y="2" width="98" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lkz-p9-gsX" secondAttribute="height" multiplier="1:1" id="YUL-xa-CEn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五金城" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-rI-mcy">
+                        <rect key="frame" x="2" y="104" width="98" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="nMy-mn-ywT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="020-88562918" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jG-2t-Ook">
+                        <rect key="frame" x="2" y="125" width="98" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gM8-KC-3SQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.95294117647058818" green="0.70588235294117641" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VerticalDottedLineImg" translatesAutoresizingMaskIntoConstraints="NO" id="FYk-lA-zGw">
+                        <rect key="frame" x="101" y="0.0" width="1" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="7U7-M7-t6V"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HorizonDottedLineImg" translatesAutoresizingMaskIntoConstraints="NO" id="sy2-9D-aEf">
+                        <rect key="frame" x="0.0" y="149" width="102" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ccv-eA-sEB"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQ0-ru-VMd">
+                        <rect key="frame" x="0.0" y="149" width="102" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="37v-BX-M1I"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jL0-rI-mcy" secondAttribute="trailing" constant="2" id="1P5-hU-a8E"/>
+                <constraint firstItem="3jG-2t-Ook" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="3l9-yt-rka"/>
+                <constraint firstItem="pQ0-ru-VMd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="40h-d1-EYy"/>
+                <constraint firstItem="jL0-rI-mcy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="5ob-WV-eYz"/>
+                <constraint firstAttribute="bottom" secondItem="pQ0-ru-VMd" secondAttribute="bottom" id="AfO-ot-rU0"/>
+                <constraint firstItem="Lkz-p9-gsX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="DFL-V4-Ggi"/>
+                <constraint firstAttribute="trailing" secondItem="pQ0-ru-VMd" secondAttribute="trailing" id="FOJ-Jp-7gn"/>
+                <constraint firstAttribute="bottom" secondItem="3jG-2t-Ook" secondAttribute="bottom" constant="4" id="GTx-Qj-Mg8"/>
+                <constraint firstItem="sy2-9D-aEf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lv9-ag-XeS"/>
+                <constraint firstItem="FYk-lA-zGw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ogy-cj-AiI"/>
+                <constraint firstItem="Lkz-p9-gsX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="PY1-10-CUJ"/>
+                <constraint firstAttribute="trailing" secondItem="Lkz-p9-gsX" secondAttribute="trailing" constant="2" id="QSq-Ks-KOj"/>
+                <constraint firstAttribute="bottom" secondItem="FYk-lA-zGw" secondAttribute="bottom" id="RvS-lk-BKq"/>
+                <constraint firstAttribute="trailing" secondItem="sy2-9D-aEf" secondAttribute="trailing" id="ZXu-4q-Jce"/>
+                <constraint firstAttribute="trailing" secondItem="FYk-lA-zGw" secondAttribute="trailing" id="a9b-OE-QXH"/>
+                <constraint firstItem="3jG-2t-Ook" firstAttribute="top" secondItem="jL0-rI-mcy" secondAttribute="bottom" id="imZ-Z9-HSK"/>
+                <constraint firstAttribute="bottom" secondItem="sy2-9D-aEf" secondAttribute="bottom" id="pEw-tP-7Ak"/>
+                <constraint firstAttribute="trailing" secondItem="3jG-2t-Ook" secondAttribute="trailing" constant="2" id="pYX-Zl-R29"/>
+                <constraint firstItem="jL0-rI-mcy" firstAttribute="top" secondItem="Lkz-p9-gsX" secondAttribute="bottom" constant="4" id="pll-Q0-pSy"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLineView" destination="pQ0-ru-VMd" id="qd1-wO-AzH"/>
+                <outlet property="icon" destination="Lkz-p9-gsX" id="0J9-Uf-7Ji"/>
+                <outlet property="name" destination="jL0-rI-mcy" id="R3K-Du-elT"/>
+                <outlet property="telno" destination="3jG-2t-Ook" id="b2w-QF-DlV"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="123"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HorizonDottedLineImg" width="1" height="1"/>
+        <image name="StoreGoodsImg" width="114" height="114"/>
+        <image name="VerticalDottedLineImg" width="1" height="184"/>
+    </resources>
+</document>

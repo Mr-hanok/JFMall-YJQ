@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearShopViewController">
+            <connections>
+                <outlet property="everydayDisCount" destination="34l-x5-ZWx" id="tao-iN-ZWS"/>
+                <outlet property="lifeSupermarket" destination="7Fd-VK-Y5J" id="aPc-sf-qpf"/>
+                <outlet property="nearbyChoice" destination="Xzu-RZ-Brv" id="GdF-pC-7LI"/>
+                <outlet property="tableView" destination="mJs-rN-dzg" id="sOp-ny-jS2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="vSW-Zz-iNW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMR-xZ-xUb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jka-So-Y6X">
+                            <rect key="frame" x="106" y="5" width="1" height="35"/>
+                            <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="fdO-t1-0UL"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fd-VK-Y5J">
+                            <rect key="frame" x="107" y="0.0" width="106" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="W9P-Gk-0MO"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="生活超市" backgroundImage="mediate_nor">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="mediate_selected">
+                                <color key="titleColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickLifeSupermarket:" destination="-1" eventType="touchUpInside" id="MFW-RC-zzU"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-0N-Wwz">
+                            <rect key="frame" x="213" y="5" width="1" height="35"/>
+                            <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="VK4-gb-xi4"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34l-x5-ZWx">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="9z4-YP-whq"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="天天特价" backgroundImage="mediate_nor">
+                                <color key="titleColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="mediate_selected">
+                                <color key="titleColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickEverydayDiscount:" destination="-1" eventType="touchUpInside" id="O6N-06-7hD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzu-RZ-Brv">
+                            <rect key="frame" x="214" y="0.0" width="106" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="tef-0R-qVz"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="周边精选" backgroundImage="mediate_nor">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="mediate_selected">
+                                <color key="titleColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickNearbyChoice:" destination="-1" eventType="touchUpInside" id="Ges-aR-v7y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jka-So-Y6X" firstAttribute="leading" secondItem="34l-x5-ZWx" secondAttribute="trailing" id="18c-Xt-3JU"/>
+                        <constraint firstAttribute="bottom" secondItem="34l-x5-ZWx" secondAttribute="bottom" id="1rY-Ha-qnz"/>
+                        <constraint firstItem="34l-x5-ZWx" firstAttribute="width" secondItem="7Fd-VK-Y5J" secondAttribute="width" id="2Cq-AB-l3Q"/>
+                        <constraint firstItem="B7w-0N-Wwz" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="top" constant="5" id="2fC-7L-0yt"/>
+                        <constraint firstItem="Xzu-RZ-Brv" firstAttribute="leading" secondItem="B7w-0N-Wwz" secondAttribute="trailing" id="3A1-aT-cCO"/>
+                        <constraint firstItem="7Fd-VK-Y5J" firstAttribute="leading" secondItem="Jka-So-Y6X" secondAttribute="trailing" id="AyU-JW-2be"/>
+                        <constraint firstItem="Jka-So-Y6X" firstAttribute="leading" secondItem="34l-x5-ZWx" secondAttribute="trailing" id="DoV-Ar-dNn"/>
+                        <constraint firstAttribute="trailing" secondItem="Xzu-RZ-Brv" secondAttribute="trailing" id="ESZ-7Y-Udt"/>
+                        <constraint firstItem="34l-x5-ZWx" firstAttribute="leading" secondItem="qMR-xZ-xUb" secondAttribute="leading" id="G1Z-n6-o0y"/>
+                        <constraint firstItem="7Fd-VK-Y5J" firstAttribute="leading" secondItem="Jka-So-Y6X" secondAttribute="trailing" id="Iqu-fH-tsG"/>
+                        <constraint firstAttribute="bottom" secondItem="Xzu-RZ-Brv" secondAttribute="bottom" id="JKS-2o-fUd"/>
+                        <constraint firstAttribute="bottom" secondItem="B7w-0N-Wwz" secondAttribute="bottom" constant="5" id="Ma2-ih-luv"/>
+                        <constraint firstItem="7Fd-VK-Y5J" firstAttribute="leading" secondItem="Jka-So-Y6X" secondAttribute="trailing" id="V5Z-KQ-pSX"/>
+                        <constraint firstItem="34l-x5-ZWx" firstAttribute="width" secondItem="Xzu-RZ-Brv" secondAttribute="width" id="WYu-6Q-Syz"/>
+                        <constraint firstItem="34l-x5-ZWx" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="top" id="a6v-VV-Aig"/>
+                        <constraint firstAttribute="bottom" secondItem="Jka-So-Y6X" secondAttribute="bottom" constant="5" id="aGD-b4-GxO"/>
+                        <constraint firstItem="B7w-0N-Wwz" firstAttribute="leading" secondItem="7Fd-VK-Y5J" secondAttribute="trailing" id="geg-5L-fz1"/>
+                        <constraint firstItem="Jka-So-Y6X" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="top" constant="5" id="hCn-1N-jfq"/>
+                        <constraint firstAttribute="height" constant="45" id="qVo-Pb-6SD"/>
+                        <constraint firstItem="Xzu-RZ-Brv" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="top" id="tiQ-No-Ybv"/>
+                        <constraint firstAttribute="bottom" secondItem="7Fd-VK-Y5J" secondAttribute="bottom" id="tzf-pU-XdX"/>
+                        <constraint firstItem="Jka-So-Y6X" firstAttribute="leading" secondItem="34l-x5-ZWx" secondAttribute="trailing" id="vz0-Ry-ejU"/>
+                        <constraint firstItem="7Fd-VK-Y5J" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="top" id="xqR-DG-s2O"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="89" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="mJs-rN-dzg">
+                    <rect key="frame" x="0.0" y="45" width="320" height="459"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1kg-7U-npI"/>
+                        <outlet property="delegate" destination="-1" id="ylh-23-9EY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mJs-rN-dzg" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="bottom" id="4sX-Vm-Pzv"/>
+                <constraint firstAttribute="trailing" secondItem="qMR-xZ-xUb" secondAttribute="trailing" id="5sZ-Wf-T7u"/>
+                <constraint firstAttribute="trailing" secondItem="mJs-rN-dzg" secondAttribute="trailing" id="7c7-XI-kVp"/>
+                <constraint firstItem="mJs-rN-dzg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HTX-XH-OUt"/>
+                <constraint firstItem="mJs-rN-dzg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="STe-bd-nv3"/>
+                <constraint firstItem="qMR-xZ-xUb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kiQ-v8-RvT"/>
+                <constraint firstItem="qMR-xZ-xUb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sL7-rZ-60w"/>
+                <constraint firstItem="mJs-rN-dzg" firstAttribute="top" secondItem="qMR-xZ-xUb" secondAttribute="bottom" id="uBM-82-lDq"/>
+                <constraint firstAttribute="bottom" secondItem="mJs-rN-dzg" secondAttribute="bottom" id="x0w-aT-RxU"/>
+                <constraint firstAttribute="trailing" secondItem="mJs-rN-dzg" secondAttribute="trailing" id="yaw-YX-N1I"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <point key="canvasLocation" x="489" y="276"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mediate_nor" width="541" height="149"/>
+        <image name="mediate_selected" width="541" height="149"/>
+    </resources>
+</document>

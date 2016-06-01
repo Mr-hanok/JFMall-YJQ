@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="CbJ-Jw-xDL" id="brc-2k-3eu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbJ-Jw-xDL">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="m0K-PC-jaG"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CbJ-Jw-xDL" secondAttribute="bottom" id="2jw-8h-GPH"/>
+                <constraint firstItem="CbJ-Jw-xDL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="32q-P9-RnS"/>
+                <constraint firstAttribute="trailing" secondItem="CbJ-Jw-xDL" secondAttribute="trailing" id="MBu-Ou-N1D"/>
+                <constraint firstItem="CbJ-Jw-xDL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aHo-nn-ndo"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="CbJ-Jw-xDL"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2jw-8h-GPH"/>
+                    <exclude reference="32q-P9-RnS"/>
+                    <exclude reference="MBu-Ou-N1D"/>
+                    <exclude reference="aHo-nn-ndo"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="CbJ-Jw-xDL"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2jw-8h-GPH"/>
+                    <include reference="32q-P9-RnS"/>
+                    <include reference="MBu-Ou-N1D"/>
+                    <include reference="aHo-nn-ndo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

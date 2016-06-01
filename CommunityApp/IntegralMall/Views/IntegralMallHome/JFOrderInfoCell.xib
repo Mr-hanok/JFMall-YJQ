@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JFOrderInfoCell" id="KGk-i7-Jjw" customClass="JFOrderInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="500积分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-mA-KSd">
+                        <rect key="frame" x="95" y="65" width="54" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="VVT-ld-bTc"/>
+                            <constraint firstAttribute="height" constant="17" id="YVt-aI-Gx0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.91764705882352937" green="0.49411764705882355" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VVT-ld-bTc"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="749" text="男士休闲长裤" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2n-Mo-GAt">
+                        <rect key="frame" x="95" y="7" width="265" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Fk5-uM-PgY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fk5-uM-PgY"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="商品明细" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-Ed-uMj">
+                        <rect key="frame" x="95" y="45.5" width="260" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShopCartWaresDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-aA-yDK">
+                        <rect key="frame" x="10" y="7" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="HOM-Ck-PsY"/>
+                            <constraint firstAttribute="height" constant="75" id="fo0-b9-hfl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRw-kv-2Oh">
+                        <rect key="frame" x="329" y="65" width="16" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U2n-Mo-GAt" secondAttribute="trailing" constant="15" id="0h2-mU-wo8"/>
+                    <constraint firstItem="3ra-mA-KSd" firstAttribute="top" secondItem="4ld-Ed-uMj" secondAttribute="bottom" constant="5" id="4yt-md-Wkw"/>
+                    <constraint firstItem="bAu-aA-yDK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VY9-aW-zn9"/>
+                    <constraint firstAttribute="trailing" secondItem="TRw-kv-2Oh" secondAttribute="trailing" constant="30" id="Yej-ee-TuE"/>
+                    <constraint firstItem="U2n-Mo-GAt" firstAttribute="leading" secondItem="bAu-aA-yDK" secondAttribute="trailing" constant="10" id="ZBo-Ya-069"/>
+                    <constraint firstItem="3ra-mA-KSd" firstAttribute="leading" secondItem="U2n-Mo-GAt" secondAttribute="leading" id="a1e-8I-49t"/>
+                    <constraint firstItem="TRw-kv-2Oh" firstAttribute="centerY" secondItem="3ra-mA-KSd" secondAttribute="centerY" id="duc-hZ-iRh"/>
+                    <constraint firstItem="bAu-aA-yDK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hN6-sp-qlW"/>
+                    <constraint firstItem="4ld-Ed-uMj" firstAttribute="leading" secondItem="U2n-Mo-GAt" secondAttribute="leading" id="he1-vQ-xVE"/>
+                    <constraint firstItem="U2n-Mo-GAt" firstAttribute="top" secondItem="bAu-aA-yDK" secondAttribute="top" id="j8h-S8-xPL"/>
+                    <constraint firstItem="3ra-mA-KSd" firstAttribute="bottom" secondItem="bAu-aA-yDK" secondAttribute="bottom" id="kUk-k0-k4Y"/>
+                    <constraint firstAttribute="trailing" secondItem="4ld-Ed-uMj" secondAttribute="trailing" constant="20" id="qyg-Lq-6CC"/>
+                    <constraint firstItem="4ld-Ed-uMj" firstAttribute="top" secondItem="U2n-Mo-GAt" secondAttribute="bottom" constant="5" id="xe2-bh-ayS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderDetailLabel" destination="4ld-Ed-uMj" id="JH1-sw-tJ2"/>
+                <outlet property="orderImageIV" destination="bAu-aA-yDK" id="7Xh-Ol-FFc"/>
+                <outlet property="orderIntgralLabl" destination="3ra-mA-KSd" id="Vda-oY-Byq"/>
+                <outlet property="orderNameLabel" destination="U2n-Mo-GAt" id="N0R-Xa-98O"/>
+                <outlet property="orderNumLabel" destination="TRw-kv-2Oh" id="Pfm-Mk-Zqa"/>
+            </connections>
+            <point key="canvasLocation" x="220.5" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ShopCartWaresDefaultImg" width="104" height="104"/>
+    </resources>
+</document>

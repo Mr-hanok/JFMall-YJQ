@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GrouponOrderSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPw-M7-RtA">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="pm6-Do-Hmo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pm6-Do-Hmo"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="pm6-Do-Hmo"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES1-ek-Pes">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="AXN-xk-DRG"/>
+                        <constraint firstAttribute="height" constant="36" id="hZG-h5-fi4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.96231244760000001" green="0.64379414189999995" blue="0.14635628310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AXN-xk-DRG"/>
+                            <exclude reference="hZG-h5-fi4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="AXN-xk-DRG"/>
+                            <include reference="hZG-h5-fi4"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团购商品名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-hG-PpX">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mxs-A6-5Rg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="mxs-A6-5Rg"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="mxs-A6-5Rg"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YMf-hG-PpX" secondAttribute="trailing" constant="8" id="0Jw-Od-vxW"/>
+                <constraint firstItem="YMf-hG-PpX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8BZ-4w-pKx"/>
+                <constraint firstItem="ES1-ek-Pes" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EVh-ur-PIF"/>
+                <constraint firstItem="WPw-M7-RtA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G5u-Pu-eQh"/>
+                <constraint firstAttribute="trailing" secondItem="ES1-ek-Pes" secondAttribute="trailing" constant="8" id="HFh-v8-SvV"/>
+                <constraint firstItem="WPw-M7-RtA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="efK-Zy-KSE"/>
+                <constraint firstItem="ES1-ek-Pes" firstAttribute="leading" secondItem="WPw-M7-RtA" secondAttribute="trailing" constant="8" id="kyt-yF-gVo"/>
+                <constraint firstItem="YMf-hG-PpX" firstAttribute="top" secondItem="ES1-ek-Pes" secondAttribute="bottom" id="ziB-kf-58Z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="WPw-M7-RtA"/>
+                    <exclude reference="ES1-ek-Pes"/>
+                    <exclude reference="YMf-hG-PpX"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="G5u-Pu-eQh"/>
+                    <exclude reference="efK-Zy-KSE"/>
+                    <exclude reference="0Jw-Od-vxW"/>
+                    <exclude reference="8BZ-4w-pKx"/>
+                    <exclude reference="ziB-kf-58Z"/>
+                    <exclude reference="EVh-ur-PIF"/>
+                    <exclude reference="HFh-v8-SvV"/>
+                    <exclude reference="kyt-yF-gVo"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="WPw-M7-RtA"/>
+                    <include reference="ES1-ek-Pes"/>
+                    <include reference="YMf-hG-PpX"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="G5u-Pu-eQh"/>
+                    <include reference="efK-Zy-KSE"/>
+                    <include reference="0Jw-Od-vxW"/>
+                    <include reference="8BZ-4w-pKx"/>
+                    <include reference="ziB-kf-58Z"/>
+                    <include reference="EVh-ur-PIF"/>
+                    <include reference="HFh-v8-SvV"/>
+                    <include reference="kyt-yF-gVo"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="173" y="0.0"/>
+        </view>
+    </objects>
+</document>

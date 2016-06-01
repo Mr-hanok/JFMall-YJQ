@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ManJianCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mj-border" translatesAutoresizingMaskIntoConstraints="NO" id="ICZ-lE-o2G">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="199.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kz-3w-n1A">
+                        <rect key="frame" x="36" y="133" width="44.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxFullImg" translatesAutoresizingMaskIntoConstraints="NO" id="NcF-Us-wIw">
+                        <rect key="frame" x="32" y="8.5" width="96" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NcF-Us-wIw" secondAttribute="height" multiplier="1:1" id="TKq-p3-MV2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TKq-p3-MV2"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级电饭煲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Su-tf-HFV">
+                        <rect key="frame" x="20" y="111" width="120" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgo-Ki-Rcc">
+                        <rect key="frame" x="20" y="130" width="120" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1Ay-6p-Ukd"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mj-icon" translatesAutoresizingMaskIntoConstraints="NO" id="77S-Lo-Cah">
+                        <rect key="frame" x="123" y="133" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="fFv-hD-2rd"/>
+                            <constraint firstAttribute="height" constant="17" id="yaL-hL-0S3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebA-jc-WV1">
+                        <rect key="frame" x="20" y="133" width="14" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="NcF-Us-wIw" firstAttribute="centerY" secondItem="ICZ-lE-o2G" secondAttribute="centerY" multiplier="7:10" id="2Lv-ea-1Xq"/>
+                <constraint firstAttribute="bottom" secondItem="ebA-jc-WV1" secondAttribute="bottom" constant="10" id="51o-uu-eVc"/>
+                <constraint firstAttribute="trailing" secondItem="1Su-tf-HFV" secondAttribute="trailing" constant="20" id="7S9-cf-7Xt"/>
+                <constraint firstItem="1Su-tf-HFV" firstAttribute="top" secondItem="NcF-Us-wIw" secondAttribute="bottom" constant="10" id="AOU-wM-CWO"/>
+                <constraint firstItem="ICZ-lE-o2G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CFH-Js-nFe"/>
+                <constraint firstItem="NcF-Us-wIw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Cf2-CQ-Ve1"/>
+                <constraint firstItem="NcF-Us-wIw" firstAttribute="width" secondItem="ICZ-lE-o2G" secondAttribute="width" multiplier="6:10" id="EFg-2Q-UsD"/>
+                <constraint firstAttribute="trailing" secondItem="ICZ-lE-o2G" secondAttribute="trailing" id="Hrz-ri-LdC"/>
+                <constraint firstItem="8kz-3w-n1A" firstAttribute="top" secondItem="Mgo-Ki-Rcc" secondAttribute="bottom" constant="2" id="JVG-M2-c6h"/>
+                <constraint firstItem="NcF-Us-wIw" firstAttribute="centerX" secondItem="ICZ-lE-o2G" secondAttribute="centerX" id="O3A-jG-w7M"/>
+                <constraint firstItem="ICZ-lE-o2G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="P1O-VY-NQG"/>
+                <constraint firstItem="8kz-3w-n1A" firstAttribute="centerY" secondItem="ebA-jc-WV1" secondAttribute="centerY" id="QlZ-UV-eg5"/>
+                <constraint firstAttribute="bottom" secondItem="ICZ-lE-o2G" secondAttribute="bottom" id="Xff-FI-mcJ"/>
+                <constraint firstAttribute="trailing" secondItem="77S-Lo-Cah" secondAttribute="trailing" constant="20" id="Y27-am-CsY"/>
+                <constraint firstItem="Mgo-Ki-Rcc" firstAttribute="top" secondItem="1Su-tf-HFV" secondAttribute="bottom" constant="2" id="a3Z-c4-49p"/>
+                <constraint firstAttribute="trailing" secondItem="Mgo-Ki-Rcc" secondAttribute="trailing" constant="20" id="h50-pN-s4S"/>
+                <constraint firstItem="77S-Lo-Cah" firstAttribute="centerY" secondItem="8kz-3w-n1A" secondAttribute="centerY" id="ha0-1h-Alf"/>
+                <constraint firstItem="ebA-jc-WV1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ikX-C6-1vt"/>
+                <constraint firstAttribute="trailing" secondItem="NcF-Us-wIw" secondAttribute="trailing" constant="30" id="nfr-oe-uSi"/>
+                <constraint firstItem="NcF-Us-wIw" firstAttribute="height" secondItem="ICZ-lE-o2G" secondAttribute="height" multiplier="6:10" id="oww-pE-vh5"/>
+                <constraint firstItem="Mgo-Ki-Rcc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pnL-oE-FJV"/>
+                <constraint firstItem="8kz-3w-n1A" firstAttribute="leading" secondItem="ebA-jc-WV1" secondAttribute="trailing" constant="2" id="wDf-HR-RNi"/>
+                <constraint firstItem="1Su-tf-HFV" firstAttribute="leading" secondItem="ebA-jc-WV1" secondAttribute="leading" id="wFr-of-7T8"/>
+            </constraints>
+            <size key="customSize" width="460" height="297"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Cf2-CQ-Ve1"/>
+                    <exclude reference="nfr-oe-uSi"/>
+                    <exclude reference="AOU-wM-CWO"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="goodsImageIV" destination="NcF-Us-wIw" id="KTD-oU-Qc1"/>
+                <outlet property="goodsName" destination="1Su-tf-HFV" id="LVd-u5-r5Z"/>
+                <outlet property="goodsPrice" destination="8kz-3w-n1A" id="XhM-WH-z1P"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="207"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CheckBoxFullImg" width="6" height="6"/>
+        <image name="mj-border" width="225" height="225"/>
+        <image name="mj-icon" width="30" height="30"/>
+    </resources>
+</document>

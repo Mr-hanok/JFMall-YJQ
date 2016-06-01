@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyCouponsShareTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="MyCouponsShareTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="团购券100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-gS-lIF">
+                        <rect key="frame" x="10" y="0.0" width="80" height="49"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="esK-Pz-cQh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLn-c0-X9U">
+                        <rect key="frame" x="0.0" y="48" width="320" height="1"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OKi-co-NP1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6y-UJ-bDW">
+                        <rect key="frame" x="90" y="0.0" width="199" height="49"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxOK" translatesAutoresizingMaskIntoConstraints="NO" id="nNu-aU-RjS">
+                        <rect key="frame" x="290" y="14" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Zdo-kW-nBg"/>
+                            <constraint firstAttribute="width" constant="20" id="iGI-TP-bgO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="nNu-aU-RjS" secondAttribute="centerY" id="21V-4g-ZAx"/>
+                    <constraint firstItem="1PT-gS-lIF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="84O-GD-Xim"/>
+                    <constraint firstAttribute="bottom" secondItem="F6y-UJ-bDW" secondAttribute="bottom" id="Aeo-WB-LaO"/>
+                    <constraint firstItem="F6y-UJ-bDW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gre-O5-ApZ"/>
+                    <constraint firstItem="F6y-UJ-bDW" firstAttribute="leading" secondItem="1PT-gS-lIF" secondAttribute="trailing" id="Sjz-zu-idk"/>
+                    <constraint firstItem="nNu-aU-RjS" firstAttribute="leading" secondItem="F6y-UJ-bDW" secondAttribute="trailing" constant="1" id="TmY-Y7-yaO"/>
+                    <constraint firstItem="OLn-c0-X9U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WV8-1k-v0K"/>
+                    <constraint firstAttribute="bottom" secondItem="OLn-c0-X9U" secondAttribute="bottom" id="bUp-2L-NLp"/>
+                    <constraint firstItem="1PT-gS-lIF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bzC-JY-lpI"/>
+                    <constraint firstAttribute="trailing" secondItem="nNu-aU-RjS" secondAttribute="trailing" constant="10" id="cnE-OZ-WQb"/>
+                    <constraint firstAttribute="bottom" secondItem="1PT-gS-lIF" secondAttribute="bottom" id="og8-bO-cK4"/>
+                    <constraint firstAttribute="trailing" secondItem="OLn-c0-X9U" secondAttribute="trailing" id="yO6-LM-RoT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="check" destination="nNu-aU-RjS" id="214-IT-bvI"/>
+                <outlet property="index" destination="1PT-gS-lIF" id="8En-v2-aRp"/>
+                <outlet property="title" destination="F6y-UJ-bDW" id="ptY-F1-nFd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CheckBoxOK" width="15" height="15"/>
+    </resources>
+</document>

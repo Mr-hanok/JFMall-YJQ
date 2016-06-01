@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GrouponOrderListViewController">
+            <connections>
+                <outlet property="grouponOrderFinishedBtn" destination="oTr-kS-fqq" id="DpD-Xm-MDR"/>
+                <outlet property="grouponOrderHeaderBgView" destination="wYu-jN-e5T" id="63E-zs-ajK"/>
+                <outlet property="grouponOrderUnFinishedBtn" destination="5s5-bf-LED" id="m3L-90-u6O"/>
+                <outlet property="tableView" destination="RTW-ev-7wi" id="n60-at-wXA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGz-1C-ov5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-jN-e5T">
+                            <rect key="frame" x="6" y="5" width="308" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s5-bf-LED">
+                                    <rect key="frame" x="0.0" y="0.0" width="154" height="40"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="已付款">
+                                        <color key="titleColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="未完成">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickUnFinishedBtn:" destination="-1" eventType="touchUpInside" id="LFS-dv-Hqe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTr-kS-fqq">
+                                    <rect key="frame" x="154" y="0.0" width="154" height="40"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="未付款">
+                                        <color key="titleColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="已完成">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickFinishedBtn:" destination="-1" eventType="touchUpInside" id="1Bj-g6-LXg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="oTr-kS-fqq" firstAttribute="width" secondItem="5s5-bf-LED" secondAttribute="width" id="0fM-Cy-rrl"/>
+                                <constraint firstItem="oTr-kS-fqq" firstAttribute="leading" secondItem="5s5-bf-LED" secondAttribute="trailing" id="84B-5C-Xk3"/>
+                                <constraint firstItem="5s5-bf-LED" firstAttribute="leading" secondItem="wYu-jN-e5T" secondAttribute="leading" id="Bhe-dB-dZx"/>
+                                <constraint firstAttribute="trailing" secondItem="oTr-kS-fqq" secondAttribute="trailing" id="Dbf-jz-X7T"/>
+                                <constraint firstItem="oTr-kS-fqq" firstAttribute="top" secondItem="wYu-jN-e5T" secondAttribute="top" id="b2l-3Y-SEp"/>
+                                <constraint firstAttribute="bottom" secondItem="5s5-bf-LED" secondAttribute="bottom" id="bKj-1C-sGG"/>
+                                <constraint firstItem="5s5-bf-LED" firstAttribute="top" secondItem="wYu-jN-e5T" secondAttribute="top" id="u2W-lG-gsE"/>
+                                <constraint firstAttribute="bottom" secondItem="oTr-kS-fqq" secondAttribute="bottom" id="vNo-ob-0XZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wYu-jN-e5T" firstAttribute="top" secondItem="cGz-1C-ov5" secondAttribute="top" constant="5" id="3bR-a3-22Y"/>
+                        <constraint firstAttribute="bottom" secondItem="wYu-jN-e5T" secondAttribute="bottom" constant="5" id="Jef-YC-BRQ"/>
+                        <constraint firstAttribute="height" constant="50" id="SQo-3b-LGJ"/>
+                        <constraint firstItem="wYu-jN-e5T" firstAttribute="leading" secondItem="cGz-1C-ov5" secondAttribute="leading" constant="6" id="W0I-uS-5V5"/>
+                        <constraint firstAttribute="trailing" secondItem="wYu-jN-e5T" secondAttribute="trailing" constant="6" id="l8H-Nu-jwp"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="136" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="RTW-ev-7wi">
+                    <rect key="frame" x="0.0" y="50" width="320" height="454"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hYd-Qv-YgN"/>
+                        <outlet property="delegate" destination="-1" id="YSO-37-LKb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RTW-ev-7wi" secondAttribute="trailing" id="2ai-Yp-1cr"/>
+                <constraint firstAttribute="bottom" secondItem="RTW-ev-7wi" secondAttribute="bottom" id="Do5-G1-rVN"/>
+                <constraint firstItem="RTW-ev-7wi" firstAttribute="top" secondItem="cGz-1C-ov5" secondAttribute="bottom" id="Dpd-qV-NfL"/>
+                <constraint firstItem="cGz-1C-ov5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TXj-Pl-zXI"/>
+                <constraint firstAttribute="trailing" secondItem="cGz-1C-ov5" secondAttribute="trailing" id="b9z-g4-zao"/>
+                <constraint firstItem="cGz-1C-ov5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nkq-dA-MyY"/>
+                <constraint firstItem="RTW-ev-7wi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o6t-4A-2ne"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

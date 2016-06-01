@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>问你个严肃的事</string>
+		<key>icon</key>
+		<string>MsgSelfHeadImg</string>
+		<key>time</key>
+		<string>前天 10:25</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>说，什么事？</string>
+		<key>icon</key>
+		<string>MsgServiceHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:05</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>你是不是我最好的朋友？</string>
+		<key>icon</key>
+		<string>MsgSelfHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>不借</string>
+		<key>icon</key>
+		<string>MsgServiceHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>qie，哥又不穷，不是找你借钱。你就回答“是”或者“不是”。</string>
+		<key>icon</key>
+		<string>MsgServiceHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:07</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>是</string>
+		<key>icon</key>
+		<string>MsgServiceHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:11</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>刚才看了部非常感人的电视剧，电视上说狗才是人类最好的朋友，所以我想确认一下</string>
+		<key>icon</key>
+		<string>MsgSelfHeadImg</string>
+		<key>time</key>
+		<string>昨天 20:15</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>【环球时报综合报道】全国政协副主席、中联部部长王家瑞10日在北京会见了由主席昂山素季率领的缅甸全国民主联盟代表团，就深化两党关系深入交换意见。全国民主联盟成立于1988年。在1990年大选中，该党获得485个议席中的396席，后因军政府拒绝移交权力而与政府进行了长期斗争。2012年该党重新成为合法政党，并于4月1日举行的议会补选中获得大胜。
+
+　　中国驻缅甸使馆网站10日刊登的消息称，中国驻缅甸大使杨厚兰赴机场为启程访华的缅甸全国民主联盟主席昂山素季送行。昂山素季表示，相信此访将对缅中友好合作关系发挥积极影响。香港《南华早报》的报道称，这是昂山素季第一次访华。6月5日，中联部宣布昂山于10日至14日访华。
+
+　　中国外交部发言人洪磊10日在记者会上表示，昂山素季女士此次率领民盟代表团来华访问，是两国党际交往的组成部分。长期以来，中国共产党和缅甸各党派之间保持着友好交往。我们希望通过此次访问，进一步深化两党之间的理解、信任，共同推动中缅各领域合作的发展。
+
+　　全国民主联盟成立于1988年。在1990年大选中，该党获得485个议席中的396席，后因军政府拒绝移交权力而与政府进行了长期斗争。2012年该党重新成为合法政党，并于4月1日举行的议会补选中获得大胜。【环球时报记者　王  渠】 </string>
+		<key>icon</key>
+		<string>BgImg</string>
+		<key>time</key>
+		<string>昨天 20:15</string>
+		<key>type</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>访问中国</string>
+	</dict>
+</array>
+</plist>
