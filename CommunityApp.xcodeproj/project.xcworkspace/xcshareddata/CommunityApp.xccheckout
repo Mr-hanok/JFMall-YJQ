@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C6EE8BD7-4998-4F6A-AF94-5641216A98BF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CommunityApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>55c9ec0f-2e37-304a-b79f-9fa806981e39</key>
+		<string>https://10.44.53.65:8443/svn/CommunityApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>030-SrciOS/CommunityApp/CommunityApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>55c9ec0f-2e37-304a-b79f-9fa806981e39</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>55c9ec0f-2e37-304a-b79f-9fa806981e39</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>55c9ec0f-2e37-304a-b79f-9fa806981e39</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CommunityApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

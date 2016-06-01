@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : {
+
+    },
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : 0,
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EB18FDF6-B4BD-45C6-93E0-C14BF66CD410",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : "CommunityApp\/",
+    "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973" : "CommunityAppNew341\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CommunityApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CommunityApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/d.bjyijiequ.com",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/d.bjyijiequ.com",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816"
+    }
+  ]
+}

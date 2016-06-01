@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB18FDF6-B4BD-45C6-93E0-C14BF66CD410</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CommunityApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816</key>
+		<string>svn://d.bjyijiequ.com/yijiequ_ios/trunk/CommunityApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CommunityApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816</key>
+		<string>svn://d.bjyijiequ.com</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://d.bjyijiequ.com/yijiequ_ios/trunk/CommunityApp/CommunityApp.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CommunityApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
