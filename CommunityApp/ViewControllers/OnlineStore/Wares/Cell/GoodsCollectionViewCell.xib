@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoodsCollectionViewCell" id="gTV-IL-0wX" customClass="GoodsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="206"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRh-Dn-iIP">
+                        <rect key="frame" x="4" y="0.0" width="148" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nRh-Dn-iIP" secondAttribute="height" multiplier="1:1" id="zVf-OB-6Ki"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="GoodsImg">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="goodsImgBtnClickHandler:" destination="gTV-IL-0wX" eventType="touchUpInside" id="p73-2Y-OZ1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥298   $567" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-Kb-e8z">
+                        <rect key="frame" x="10" y="176" width="95" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2Jc-zn-uwI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.87450980392156863" green="0.26666666666666666" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yp-IC-kwe">
+                        <rect key="frame" x="106" y="172" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="r5J-J2-HUr"/>
+                            <constraint firstAttribute="width" constant="40" id="uX2-WX-TEA"/>
+                        </constraints>
+                        <state key="normal" image="CartIconNor">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="CartIconPre"/>
+                        <connections>
+                            <action selector="cartBtnClickHandler:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8HK-c3-FUH"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="男士休闲裤英伦风格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1s-oE-2RI">
+                        <rect key="frame" x="8" y="154" width="148" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DrW-C9-Hoe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.396078431372549" green="0.38823529411764707" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="7Yp-IC-kwe" firstAttribute="leading" secondItem="FfY-Kb-e8z" secondAttribute="trailing" constant="1" id="3kk-dZ-yXZ"/>
+                <constraint firstItem="nRh-Dn-iIP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="604-9e-h36"/>
+                <constraint firstAttribute="trailing" secondItem="7Yp-IC-kwe" secondAttribute="trailing" constant="10" id="7V4-FI-QR5"/>
+                <constraint firstItem="M1s-oE-2RI" firstAttribute="top" secondItem="nRh-Dn-iIP" secondAttribute="bottom" constant="6" id="BdK-ss-bIw"/>
+                <constraint firstAttribute="trailing" secondItem="M1s-oE-2RI" secondAttribute="trailing" id="C32-Sa-mXX"/>
+                <constraint firstItem="FfY-Kb-e8z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="F0b-2B-I4U"/>
+                <constraint firstItem="FfY-Kb-e8z" firstAttribute="top" secondItem="M1s-oE-2RI" secondAttribute="bottom" constant="1" id="QWV-jo-VRf"/>
+                <constraint firstItem="M1s-oE-2RI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="WgC-L4-P7A"/>
+                <constraint firstItem="7Yp-IC-kwe" firstAttribute="top" secondItem="nRh-Dn-iIP" secondAttribute="bottom" constant="24" id="X78-20-1Rx"/>
+                <constraint firstAttribute="trailing" secondItem="nRh-Dn-iIP" secondAttribute="trailing" constant="4" id="jNh-wW-LyU"/>
+                <constraint firstAttribute="bottom" secondItem="7Yp-IC-kwe" secondAttribute="bottom" constant="4" id="pGO-dd-aSz"/>
+                <constraint firstItem="nRh-Dn-iIP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rRK-Do-AjF"/>
+                <constraint firstAttribute="bottom" secondItem="FfY-Kb-e8z" secondAttribute="bottom" constant="9" id="sRh-RH-IAP"/>
+            </constraints>
+            <size key="customSize" width="197" height="244"/>
+            <connections>
+                <outlet property="goodsImgBtn" destination="nRh-Dn-iIP" id="dPh-5c-R7B"/>
+                <outlet property="goodsName" destination="M1s-oE-2RI" id="Gru-HN-2Be"/>
+                <outlet property="goodsPrice" destination="FfY-Kb-e8z" id="iaK-g4-6EG"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="183"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CartIconNor" width="25" height="25"/>
+        <image name="CartIconPre" width="25" height="25"/>
+        <image name="GoodsImg" width="168" height="173"/>
+    </resources>
+</document>

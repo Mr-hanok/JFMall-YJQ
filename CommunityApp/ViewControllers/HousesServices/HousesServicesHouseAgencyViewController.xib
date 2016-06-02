@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HousesServicesHouseAgencyViewController">
+            <connections>
+                <outlet property="table" destination="Z7h-h1-5TO" id="evp-zd-ZDn"/>
+                <outlet property="tableHead" destination="kgo-rV-k2l" id="qrm-Yz-cCP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Z7h-h1-5TO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Kqh-09-WSC"/>
+                        <outlet property="delegate" destination="-1" id="nU8-sP-fT6"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Z7h-h1-5TO" secondAttribute="trailing" id="Kgd-t3-I0D"/>
+                <constraint firstItem="Z7h-h1-5TO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O02-E7-Lgg"/>
+                <constraint firstAttribute="bottom" secondItem="Z7h-h1-5TO" secondAttribute="bottom" id="O8p-Fc-bDu"/>
+                <constraint firstItem="Z7h-h1-5TO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XJ1-ly-mPK"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <point key="canvasLocation" x="34" y="324"/>
+        </view>
+        <view contentMode="scaleToFill" id="kgo-rV-k2l">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQd-yw-Dik">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomServiceBg" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-LP-PUO">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Rpy-LP-PUO" secondAttribute="trailing" id="HvL-5c-kNb"/>
+                        <constraint firstItem="Rpy-LP-PUO" firstAttribute="top" secondItem="SQd-yw-Dik" secondAttribute="top" id="PpP-cs-ALs"/>
+                        <constraint firstAttribute="bottom" secondItem="Rpy-LP-PUO" secondAttribute="bottom" id="ik8-sC-KmY"/>
+                        <constraint firstItem="Rpy-LP-PUO" firstAttribute="leading" secondItem="SQd-yw-Dik" secondAttribute="leading" id="uQ9-iE-rUB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SQd-yw-Dik" firstAttribute="top" secondItem="kgo-rV-k2l" secondAttribute="top" id="0iV-oL-lkW"/>
+                <constraint firstAttribute="bottom" secondItem="SQd-yw-Dik" secondAttribute="bottom" id="cTs-j0-ypV"/>
+                <constraint firstItem="SQd-yw-Dik" firstAttribute="leading" secondItem="kgo-rV-k2l" secondAttribute="leading" id="gMA-7o-Sur"/>
+                <constraint firstAttribute="trailing" secondItem="SQd-yw-Dik" secondAttribute="trailing" id="sGg-5s-hDY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CustomServiceBg" width="360" height="150"/>
+    </resources>
+</document>

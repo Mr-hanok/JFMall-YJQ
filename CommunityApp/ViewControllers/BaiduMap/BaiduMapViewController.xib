@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiduMapViewController">
+            <connections>
+                <outlet property="mapView" destination="lDv-4R-8Ht" id="OHG-Ex-ciE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-4R-8Ht" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lDv-4R-8Ht" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ndf-v7-Per"/>
+                <constraint firstAttribute="bottom" secondItem="lDv-4R-8Ht" secondAttribute="bottom" id="Q3g-Fl-KG6"/>
+                <constraint firstItem="lDv-4R-8Ht" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="geT-dG-bE6"/>
+                <constraint firstAttribute="trailing" secondItem="lDv-4R-8Ht" secondAttribute="trailing" id="pTv-g3-sNr"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="lDv-4R-8Ht"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ndf-v7-Per"/>
+                    <exclude reference="Q3g-Fl-KG6"/>
+                    <exclude reference="geT-dG-bE6"/>
+                    <exclude reference="pTv-g3-sNr"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lDv-4R-8Ht"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ndf-v7-Per"/>
+                    <include reference="Q3g-Fl-KG6"/>
+                    <include reference="geT-dG-bE6"/>
+                    <include reference="pTv-g3-sNr"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

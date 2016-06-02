@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DispBarcodeViewController">
+            <connections>
+                <outlet property="qrCodeImgView" destination="Wup-Ac-E9x" id="H6q-xu-Pol"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PassportQRCode" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-Ac-E9x">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="0ax-8n-axv"/>
+                        <constraint firstAttribute="height" constant="200" id="HfK-qI-5pb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0ax-8n-axv"/>
+                            <exclude reference="HfK-qI-5pb"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0ax-8n-axv"/>
+                            <include reference="HfK-qI-5pb"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Wup-Ac-E9x" secondAttribute="centerX" id="4Z9-1a-xT5"/>
+                <constraint firstItem="Wup-Ac-E9x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Kx2-Wb-ywF"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Wup-Ac-E9x"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4Z9-1a-xT5"/>
+                    <exclude reference="Kx2-Wb-ywF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Wup-Ac-E9x"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4Z9-1a-xT5"/>
+                    <include reference="Kx2-Wb-ywF"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="PassportQRCode" width="107" height="107"/>
+    </resources>
+</document>

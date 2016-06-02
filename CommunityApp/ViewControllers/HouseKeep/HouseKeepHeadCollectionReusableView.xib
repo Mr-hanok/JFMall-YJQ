@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HouseKeepHeadCollectionReusableView" id="U6b-Vx-4bR" customClass="HouseKeepHeadCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-WV-Zg1">
+                    <rect key="frame" x="0.0" y="200" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="管家服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7I-q6-bUd">
+                            <rect key="frame" x="20" y="10" width="68" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68" id="Gty-kF-QUN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="D7I-q6-bUd" firstAttribute="top" secondItem="nkU-WV-Zg1" secondAttribute="top" constant="10" id="APp-Wg-woe"/>
+                        <constraint firstItem="D7I-q6-bUd" firstAttribute="leading" secondItem="nkU-WV-Zg1" secondAttribute="leading" constant="20" id="OLO-JM-yVw"/>
+                        <constraint firstItem="D7I-q6-bUd" firstAttribute="centerY" secondItem="nkU-WV-Zg1" secondAttribute="centerY" id="Zjr-m3-Rn8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-8P-ZC0" customClass="KDCycleBannerView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nkU-WV-Zg1" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Ady-Bm-mhJ"/>
+                <constraint firstAttribute="bottom" secondItem="nkU-WV-Zg1" secondAttribute="bottom" id="S5N-HT-8bm"/>
+                <constraint firstItem="EyV-8P-ZC0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="YAq-TS-JJ0"/>
+                <constraint firstAttribute="trailing" secondItem="EyV-8P-ZC0" secondAttribute="trailing" id="ghK-UR-aDB"/>
+                <constraint firstItem="nkU-WV-Zg1" firstAttribute="top" secondItem="EyV-8P-ZC0" secondAttribute="bottom" id="hPU-gK-L7S"/>
+                <constraint firstItem="EyV-8P-ZC0" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ig2-vO-cPe"/>
+                <constraint firstAttribute="trailing" secondItem="nkU-WV-Zg1" secondAttribute="trailing" id="jY3-b6-SY7"/>
+                <constraint firstAttribute="bottom" secondItem="EyV-8P-ZC0" secondAttribute="bottom" constant="40" id="re5-4D-Rp9"/>
+            </constraints>
+            <connections>
+                <outlet property="lableView" destination="nkU-WV-Zg1" id="BTC-CD-U5b"/>
+                <outlet property="picShow" destination="EyV-8P-ZC0" id="zR0-8B-afw"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

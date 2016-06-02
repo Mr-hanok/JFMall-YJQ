@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CatagoryFooterCollectionReusableView" id="U6b-Vx-4bR" customClass="CatagoryFooterCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AdImg" translatesAutoresizingMaskIntoConstraints="NO" id="TvS-MQ-ziG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                </imageView>
+            </subviews>
+            <connections>
+                <outlet property="adImgView" destination="TvS-MQ-ziG" id="FMa-Ho-Hgw"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="AdImg" width="360" height="127"/>
+    </resources>
+</document>

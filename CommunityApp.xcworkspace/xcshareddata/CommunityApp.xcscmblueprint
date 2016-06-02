@@ -1,5 +1,5 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EA9136D6D8D45695514AECFB2816487A456041E3",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : {
 
@@ -10,17 +10,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : 0,
+    "EA9136D6D8D45695514AECFB2816487A456041E3" : 0,
     "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EB18FDF6-B4BD-45C6-93E0-C14BF66CD410",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++8816" : "CommunityApp\/",
+    "EA9136D6D8D45695514AECFB2816487A456041E3" : "JFmall\/",
     "ce57783b-ed7a-4b01-81d8-56fb0a485ff5++6973" : "CommunityAppNew341\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CommunityApp",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CommunityApp.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Mr-hanok\/JFMall-YJQ.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA9136D6D8D45695514AECFB2816487A456041E3"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/d.bjyijiequ.com",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",

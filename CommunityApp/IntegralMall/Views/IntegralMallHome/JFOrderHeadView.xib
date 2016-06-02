@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9os-sl-LCd" customClass="JFOrderHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0g-mh-0xz">
+                    <rect key="frame" x="7" y="-20" width="360" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="海澜之家连锁店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCB-us-xzS">
+                            <rect key="frame" x="28" y="20" width="304" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gps-mG-ptp">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="6Xe-wM-fxA"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="6Xe-wM-fxA"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="6Xe-wM-fxA"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-lX-a75">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Tkn-1v-ez9"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Tkn-1v-ez9"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="Tkn-1v-ez9"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Bym-lX-a75" secondAttribute="trailing" id="53N-Mv-Yjl"/>
+                        <constraint firstAttribute="trailing" secondItem="Gps-mG-ptp" secondAttribute="trailing" id="70X-kr-Q61"/>
+                        <constraint firstItem="YCB-us-xzS" firstAttribute="leading" secondItem="E0g-mh-0xz" secondAttribute="leading" constant="10" id="No5-Ih-a5B"/>
+                        <constraint firstItem="Gps-mG-ptp" firstAttribute="leading" secondItem="E0g-mh-0xz" secondAttribute="leading" id="UyU-K3-nrA"/>
+                        <constraint firstItem="YCB-us-xzS" firstAttribute="top" secondItem="E0g-mh-0xz" secondAttribute="top" constant="1" id="WXb-Wm-8w9"/>
+                        <constraint firstItem="Bym-lX-a75" firstAttribute="leading" secondItem="E0g-mh-0xz" secondAttribute="leading" id="dYc-4g-0x6"/>
+                        <constraint firstAttribute="height" constant="34" id="ije-Vo-QDm"/>
+                        <constraint firstAttribute="trailing" secondItem="YCB-us-xzS" secondAttribute="trailing" constant="10" id="jJ7-S1-rlw"/>
+                        <constraint firstItem="Bym-lX-a75" firstAttribute="top" secondItem="E0g-mh-0xz" secondAttribute="top" id="tAY-F7-6aV"/>
+                        <constraint firstAttribute="bottom" secondItem="YCB-us-xzS" secondAttribute="bottom" constant="1" id="uyz-DF-StD"/>
+                        <constraint firstAttribute="bottom" secondItem="Gps-mG-ptp" secondAttribute="bottom" id="zF6-v5-cDs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="Gps-mG-ptp"/>
+                            <exclude reference="Bym-lX-a75"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="ije-Vo-QDm"/>
+                            <exclude reference="53N-Mv-Yjl"/>
+                            <exclude reference="dYc-4g-0x6"/>
+                            <exclude reference="tAY-F7-6aV"/>
+                            <exclude reference="70X-kr-Q61"/>
+                            <exclude reference="UyU-K3-nrA"/>
+                            <exclude reference="zF6-v5-cDs"/>
+                            <exclude reference="No5-Ih-a5B"/>
+                            <exclude reference="WXb-Wm-8w9"/>
+                            <exclude reference="jJ7-S1-rlw"/>
+                            <exclude reference="uyz-DF-StD"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="Gps-mG-ptp"/>
+                            <include reference="Bym-lX-a75"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="ije-Vo-QDm"/>
+                            <include reference="53N-Mv-Yjl"/>
+                            <include reference="dYc-4g-0x6"/>
+                            <include reference="tAY-F7-6aV"/>
+                            <include reference="70X-kr-Q61"/>
+                            <include reference="UyU-K3-nrA"/>
+                            <include reference="zF6-v5-cDs"/>
+                            <include reference="No5-Ih-a5B"/>
+                            <include reference="WXb-Wm-8w9"/>
+                            <include reference="jJ7-S1-rlw"/>
+                            <include reference="uyz-DF-StD"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="E0g-mh-0xz" firstAttribute="leading" secondItem="9os-sl-LCd" secondAttribute="leading" id="E2h-ob-h1P"/>
+                <constraint firstItem="E0g-mh-0xz" firstAttribute="top" secondItem="9os-sl-LCd" secondAttribute="top" id="MPx-VX-uvF"/>
+                <constraint firstAttribute="trailing" secondItem="E0g-mh-0xz" secondAttribute="trailing" id="PbR-gR-3iC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="E2h-ob-h1P"/>
+                    <exclude reference="MPx-VX-uvF"/>
+                    <exclude reference="PbR-gR-3iC"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="E2h-ob-h1P"/>
+                    <include reference="MPx-VX-uvF"/>
+                    <include reference="PbR-gR-3iC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="orderStorenameLabel" destination="YCB-us-xzS" id="lZC-Ct-9o2"/>
+            </connections>
+            <point key="canvasLocation" x="203.5" y="122"/>
+        </view>
+    </objects>
+</document>

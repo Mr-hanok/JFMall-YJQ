@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoadAddressManageViewController">
+            <connections>
+                <outlet property="addAddressButton" destination="YTQ-4d-Frg" id="SyH-19-jfu"/>
+                <outlet property="footerView" destination="1V5-Sw-dQJ" id="dcW-Zn-UbH"/>
+                <outlet property="roadAddressTable" destination="T3X-9H-AJQ" id="QSO-ga-df7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="T3X-9H-AJQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2iG-Ht-rWG"/>
+                        <outlet property="delegate" destination="-1" id="JbI-yT-Ajf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T3X-9H-AJQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Fr-CT-hJY"/>
+                <constraint firstAttribute="bottom" secondItem="T3X-9H-AJQ" secondAttribute="bottom" id="7ol-z3-OE0"/>
+                <constraint firstAttribute="trailing" secondItem="T3X-9H-AJQ" secondAttribute="trailing" id="FEd-ux-bV0"/>
+                <constraint firstItem="T3X-9H-AJQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l1y-YR-PaE"/>
+                <constraint firstAttribute="bottom" secondItem="T3X-9H-AJQ" secondAttribute="bottom" id="nMm-lt-GXk"/>
+                <constraint firstAttribute="trailing" secondItem="T3X-9H-AJQ" secondAttribute="trailing" id="nny-2Z-DSW"/>
+                <constraint firstItem="T3X-9H-AJQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vAr-ji-ojm"/>
+                <constraint firstItem="T3X-9H-AJQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w1F-wW-vza"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="254" y="274"/>
+        </view>
+        <view contentMode="scaleToFill" id="1V5-Sw-dQJ">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lqo-T8-glf">
+                    <rect key="frame" x="0.0" y="599" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="j3D-Wq-H3C"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-4d-Frg">
+                    <rect key="frame" x="10" y="20" width="580" height="580"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="新增认证" backgroundImage="YellowBottomBgNor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="YellowBottomBgPre">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addRoadBtnClickHandler:" destination="-1" eventType="touchUpInside" id="KbN-AN-kUd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YTQ-4d-Frg" secondAttribute="bottom" id="MHd-M9-Ol2"/>
+                <constraint firstAttribute="trailing" secondItem="YTQ-4d-Frg" secondAttribute="trailing" constant="10" id="NgK-Kq-hKl"/>
+                <constraint firstItem="Lqo-T8-glf" firstAttribute="leading" secondItem="1V5-Sw-dQJ" secondAttribute="leading" id="OdA-dL-E8j"/>
+                <constraint firstAttribute="trailing" secondItem="Lqo-T8-glf" secondAttribute="trailing" id="RW4-vC-eby"/>
+                <constraint firstItem="YTQ-4d-Frg" firstAttribute="leading" secondItem="1V5-Sw-dQJ" secondAttribute="leading" constant="10" id="S23-As-FwO"/>
+                <constraint firstItem="YTQ-4d-Frg" firstAttribute="top" secondItem="1V5-Sw-dQJ" secondAttribute="top" constant="20" id="Wq7-TJ-xca"/>
+                <constraint firstAttribute="bottom" secondItem="Lqo-T8-glf" secondAttribute="bottom" id="rGg-Rr-PXq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="365" y="919"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="YellowBottomBgNor" width="120" height="54"/>
+        <image name="YellowBottomBgPre" width="120" height="54"/>
+    </resources>
+</document>

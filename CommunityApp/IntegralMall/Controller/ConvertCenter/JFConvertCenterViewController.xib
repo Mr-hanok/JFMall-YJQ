@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JFConvertCenterViewController">
+            <connections>
+                <outlet property="collectview" destination="vxq-JO-sUi" id="OdQ-DF-XJR"/>
+                <outlet property="rightNaviView" destination="m78-lO-hxT" id="lCG-SL-29z"/>
+                <outlet property="shopCarNumBtn" destination="0Gf-T1-7zV" id="CJ8-ua-pFY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vxq-JO-sUi">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zAX-R1-Mg5">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ywM-JR-IEu"/>
+                        <outlet property="delegate" destination="-1" id="6p4-mi-l5e"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vxq-JO-sUi" secondAttribute="trailing" id="5cr-0d-Ket"/>
+                <constraint firstAttribute="bottom" secondItem="vxq-JO-sUi" secondAttribute="bottom" id="Ibh-vn-cKz"/>
+                <constraint firstItem="vxq-JO-sUi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aVG-co-wfF"/>
+                <constraint firstItem="vxq-JO-sUi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iT7-GD-r05"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="vxq-JO-sUi"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5cr-0d-Ket"/>
+                    <exclude reference="Ibh-vn-cKz"/>
+                    <exclude reference="aVG-co-wfF"/>
+                    <exclude reference="iT7-GD-r05"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="vxq-JO-sUi"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5cr-0d-Ket"/>
+                    <include reference="Ibh-vn-cKz"/>
+                    <include reference="aVG-co-wfF"/>
+                    <include reference="iT7-GD-r05"/>
+                </mask>
+            </variation>
+        </view>
+        <view contentMode="scaleToFill" id="m78-lO-hxT">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-lF-22B">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Afp-gf-qRr"/>
+                        <constraint firstAttribute="height" constant="25" id="uag-M3-Lql"/>
+                    </constraints>
+                    <state key="normal" image="jf-shopcar"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Afp-gf-qRr"/>
+                            <exclude reference="uag-M3-Lql"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Afp-gf-qRr"/>
+                            <include reference="uag-M3-Lql"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="naviRightItemClick:" destination="-1" eventType="touchUpInside" id="ekG-hn-w12"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gf-T1-7zV">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="OPs-Ib-QXL"/>
+                        <constraint firstAttribute="width" constant="16" id="h6Z-HM-9YL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="0" backgroundImage="HintBgImg"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="OPs-Ib-QXL"/>
+                            <exclude reference="h6Z-HM-9YL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="OPs-Ib-QXL"/>
+                            <include reference="h6Z-HM-9YL"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="naviRightItemClick:" destination="-1" eventType="touchUpInside" id="uIF-oO-SBy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SSd-lF-22B" secondAttribute="bottom" constant="2" id="Fen-h8-zaU"/>
+                <constraint firstItem="SSd-lF-22B" firstAttribute="centerY" secondItem="m78-lO-hxT" secondAttribute="centerY" id="GCN-Xw-kul"/>
+                <constraint firstItem="0Gf-T1-7zV" firstAttribute="top" secondItem="m78-lO-hxT" secondAttribute="top" id="IdL-bn-fIz"/>
+                <constraint firstItem="0Gf-T1-7zV" firstAttribute="trailing" secondItem="SSd-lF-22B" secondAttribute="trailing" constant="10" id="RBF-va-OhW"/>
+                <constraint firstItem="0Gf-T1-7zV" firstAttribute="centerY" secondItem="m78-lO-hxT" secondAttribute="centerY" constant="-15" id="Yyc-UX-q4i"/>
+                <constraint firstItem="SSd-lF-22B" firstAttribute="centerX" secondItem="m78-lO-hxT" secondAttribute="centerX" id="bO2-2q-o7c"/>
+                <constraint firstItem="SSd-lF-22B" firstAttribute="top" secondItem="m78-lO-hxT" secondAttribute="top" constant="5" id="sLi-Ga-GGE"/>
+                <constraint firstItem="SSd-lF-22B" firstAttribute="top" secondItem="m78-lO-hxT" secondAttribute="top" constant="7" id="sYa-3h-RVP"/>
+                <constraint firstItem="SSd-lF-22B" firstAttribute="centerY" secondItem="m78-lO-hxT" secondAttribute="centerY" id="yqc-aT-qx1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="SSd-lF-22B"/>
+                    <exclude reference="0Gf-T1-7zV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="IdL-bn-fIz"/>
+                    <exclude reference="RBF-va-OhW"/>
+                    <exclude reference="Yyc-UX-q4i"/>
+                    <exclude reference="Fen-h8-zaU"/>
+                    <exclude reference="GCN-Xw-kul"/>
+                    <exclude reference="bO2-2q-o7c"/>
+                    <exclude reference="sLi-Ga-GGE"/>
+                    <exclude reference="sYa-3h-RVP"/>
+                    <exclude reference="yqc-aT-qx1"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="SSd-lF-22B"/>
+                    <include reference="0Gf-T1-7zV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="IdL-bn-fIz"/>
+                    <include reference="RBF-va-OhW"/>
+                    <include reference="Yyc-UX-q4i"/>
+                    <exclude reference="Fen-h8-zaU"/>
+                    <include reference="GCN-Xw-kul"/>
+                    <include reference="bO2-2q-o7c"/>
+                    <exclude reference="sLi-Ga-GGE"/>
+                    <exclude reference="sYa-3h-RVP"/>
+                    <exclude reference="yqc-aT-qx1"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="533" y="-230"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HintBgImg" width="13" height="13"/>
+        <image name="jf-shopcar" width="39" height="39"/>
+    </resources>
+</document>

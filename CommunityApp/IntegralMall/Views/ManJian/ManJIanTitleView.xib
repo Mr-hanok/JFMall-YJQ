@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ManJIanTitleView" id="U6b-Vx-4bR" customClass="ManJIanTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mj-title" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-kU-sSI">
+                    <rect key="frame" x="0.0" y="155" width="333" height="39"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5r-4N-Bee">
+                    <rect key="frame" x="138.5" y="166" width="56" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-Vk-6k4">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="cCd-uC-kdG"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LoO-kU-sSI" firstAttribute="top" secondItem="Vht-Vk-6k4" secondAttribute="bottom" constant="5" id="05T-6d-Jhu"/>
+                <constraint firstItem="LoO-kU-sSI" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="0ry-56-Qzj"/>
+                <constraint firstItem="Vht-Vk-6k4" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="3x1-kh-RA4"/>
+                <constraint firstAttribute="bottom" secondItem="LoO-kU-sSI" secondAttribute="bottom" id="E8c-zi-UeL"/>
+                <constraint firstAttribute="bottom" secondItem="LoO-kU-sSI" secondAttribute="bottom" id="OCS-5n-NP2"/>
+                <constraint firstItem="LoO-kU-sSI" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="TkQ-j4-yNv"/>
+                <constraint firstItem="Vht-Vk-6k4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Vex-hC-Xz4"/>
+                <constraint firstItem="b5r-4N-Bee" firstAttribute="centerY" secondItem="LoO-kU-sSI" secondAttribute="centerY" id="VjN-CY-Aww"/>
+                <constraint firstItem="b5r-4N-Bee" firstAttribute="centerX" secondItem="LoO-kU-sSI" secondAttribute="centerX" id="kPO-bZ-qxg"/>
+                <constraint firstAttribute="trailing" secondItem="Vht-Vk-6k4" secondAttribute="trailing" id="rvF-42-fPM"/>
+                <constraint firstAttribute="trailing" secondItem="LoO-kU-sSI" secondAttribute="trailing" id="v2s-xw-6k4"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0ry-56-Qzj"/>
+                    <exclude reference="OCS-5n-NP2"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="headIVHeight" destination="cCd-uC-kdG" id="Tg5-kn-V9y"/>
+                <outlet property="headImageView" destination="Vht-Vk-6k4" id="SGr-K4-uMd"/>
+                <outlet property="titleLabel" destination="b5r-4N-Bee" id="Gjp-Nq-hW1"/>
+            </connections>
+            <point key="canvasLocation" x="271.5" y="244"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="mj-title" width="330" height="30"/>
+    </resources>
+</document>

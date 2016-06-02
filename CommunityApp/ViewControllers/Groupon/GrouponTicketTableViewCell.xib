@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="GrouponTicketTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="团购券1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-lB-nat">
+                        <rect key="frame" x="15" y="0.0" width="85" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="HFB-ex-St8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJa-pp-gcz">
+                        <rect key="frame" x="100" y="0.0" width="220" height="53"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kPD-dR-rxT">
+                        <rect key="frame" x="0.0" y="53" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2eE-5Z-ocH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mJa-pp-gcz" firstAttribute="leading" secondItem="DsH-lB-nat" secondAttribute="trailing" id="06j-j2-bT9"/>
+                    <constraint firstItem="DsH-lB-nat" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0pc-6r-q75"/>
+                    <constraint firstItem="DsH-lB-nat" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D63-6H-czD"/>
+                    <constraint firstAttribute="trailing" secondItem="mJa-pp-gcz" secondAttribute="trailing" id="TeX-76-Qeh"/>
+                    <constraint firstAttribute="bottom" secondItem="kPD-dR-rxT" secondAttribute="bottom" id="V6u-ql-j4A"/>
+                    <constraint firstItem="mJa-pp-gcz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aZy-ec-NgP"/>
+                    <constraint firstItem="kPD-dR-rxT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f0W-sN-IKZ"/>
+                    <constraint firstAttribute="trailing" secondItem="kPD-dR-rxT" secondAttribute="trailing" id="hPT-QF-gX9"/>
+                    <constraint firstItem="kPD-dR-rxT" firstAttribute="top" secondItem="DsH-lB-nat" secondAttribute="bottom" id="pR4-Ej-59Z"/>
+                    <constraint firstItem="kPD-dR-rxT" firstAttribute="top" secondItem="mJa-pp-gcz" secondAttribute="bottom" id="z2O-Tg-foD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="grouponTicketId" destination="DsH-lB-nat" id="lKT-Hz-qzz"/>
+                <outlet property="grouponTicketNo" destination="mJa-pp-gcz" id="KXY-QF-5y5"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="233"/>
+        </tableViewCell>
+    </objects>
+</document>

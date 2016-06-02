@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommonHeaderView" id="U6b-Vx-4bR" customClass="CommonHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-ZZ-MrZ">
+                    <rect key="frame" x="0.0" y="5" width="320" height="40"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LineDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="uRR-Mw-6cM">
+                            <rect key="frame" x="10" y="0.0" width="310" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="zxH-Mc-IBF"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpI-Xc-ga5">
+                            <rect key="frame" x="10" y="0.0" width="310" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="  吃喝玩乐">
+                                <color key="titleColor" red="0.22352941176470589" green="0.22352941176470589" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="rightBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="k2c-1N-cDg"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEt-MX-U0w">
+                            <rect key="frame" x="270" y="0.0" width="50" height="40"/>
+                            <state key="normal" image="RightNorImg">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="RightNorImg"/>
+                            <connections>
+                                <action selector="rightBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="izV-5z-Iy3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rpI-Xc-ga5" firstAttribute="top" secondItem="i2T-ZZ-MrZ" secondAttribute="top" id="L1R-Jf-ruh"/>
+                        <constraint firstItem="uRR-Mw-6cM" firstAttribute="top" secondItem="i2T-ZZ-MrZ" secondAttribute="top" id="QfD-lZ-y2i"/>
+                        <constraint firstItem="uRR-Mw-6cM" firstAttribute="leading" secondItem="i2T-ZZ-MrZ" secondAttribute="leading" constant="10" id="lAL-DL-SPm"/>
+                        <constraint firstAttribute="trailing" secondItem="uRR-Mw-6cM" secondAttribute="trailing" id="qAD-tK-CCX"/>
+                        <constraint firstItem="rpI-Xc-ga5" firstAttribute="leading" secondItem="i2T-ZZ-MrZ" secondAttribute="leading" constant="10" id="w2F-0x-b4f"/>
+                        <constraint firstAttribute="trailing" secondItem="rpI-Xc-ga5" secondAttribute="trailing" id="x9D-7b-M6R"/>
+                        <constraint firstAttribute="bottom" secondItem="rpI-Xc-ga5" secondAttribute="bottom" id="zMl-9r-wac"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiQ-Ul-8Df">
+                    <rect key="frame" x="0.0" y="0.0" width="10" height="40"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.23529411759999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="ZhA-7P-ZUq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="LeftHeaderBgImg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="VNf-zL-TbZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tiQ-Ul-8Df" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="5Ar-Fs-k6T"/>
+                <constraint firstAttribute="trailing" secondItem="i2T-ZZ-MrZ" secondAttribute="trailing" id="A2L-4h-tT0"/>
+                <constraint firstAttribute="bottom" secondItem="tiQ-Ul-8Df" secondAttribute="bottom" constant="5" id="FmL-tG-SWn"/>
+                <constraint firstItem="i2T-ZZ-MrZ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="Hz5-SZ-EzG"/>
+                <constraint firstAttribute="bottom" secondItem="i2T-ZZ-MrZ" secondAttribute="bottom" id="sPc-L6-h0w"/>
+                <constraint firstItem="tiQ-Ul-8Df" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="wnY-Hs-Os2"/>
+                <constraint firstItem="i2T-ZZ-MrZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="xhu-AT-wHY"/>
+            </constraints>
+            <connections>
+                <outlet property="leftBtn" destination="tiQ-Ul-8Df" id="mRP-fM-Nx5"/>
+                <outlet property="leftTitle" destination="rpI-Xc-ga5" id="HYu-nI-ZLl"/>
+                <outlet property="rightBtn" destination="JEt-MX-U0w" id="fhc-Lx-zwe"/>
+            </connections>
+            <point key="canvasLocation" x="71" y="193"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="LeftHeaderBgImg" width="10" height="39"/>
+        <image name="LineDefaultImg" width="1" height="1"/>
+        <image name="RightNorImg" width="11" height="20"/>
+    </resources>
+</document>

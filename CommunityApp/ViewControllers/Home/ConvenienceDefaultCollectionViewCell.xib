@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConvenienceDefaultCollectionViewCell" id="gTV-IL-0wX" customClass="ConvenienceDefaultCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ4-KQ-mDI">
+                        <rect key="frame" x="0.0" y="3" width="100" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房屋维修" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-xU-XPy">
+                                <rect key="frame" x="0.0" y="46" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qmd-Dt-JEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HouseRepairImg" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-uO-dGO">
+                                <rect key="frame" x="33" y="8" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Te1-uO-dGO" secondAttribute="height" multiplier="1:1" id="mzm-nB-QiA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.4823529411764706" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Te1-uO-dGO" firstAttribute="leading" secondItem="RZ4-KQ-mDI" secondAttribute="leading" constant="33" id="14c-dC-HJu"/>
+                            <constraint firstItem="lUQ-xU-XPy" firstAttribute="leading" secondItem="RZ4-KQ-mDI" secondAttribute="leading" id="2fe-4g-shf"/>
+                            <constraint firstItem="lUQ-xU-XPy" firstAttribute="top" secondItem="Te1-uO-dGO" secondAttribute="bottom" constant="4" id="JOL-aa-G8r"/>
+                            <constraint firstAttribute="trailing" secondItem="lUQ-xU-XPy" secondAttribute="trailing" id="OS4-zQ-BFf"/>
+                            <constraint firstAttribute="trailing" secondItem="Te1-uO-dGO" secondAttribute="trailing" constant="33" id="p5D-cZ-FIj"/>
+                            <constraint firstAttribute="bottom" secondItem="lUQ-xU-XPy" secondAttribute="bottom" constant="5" id="rRw-1C-lHL"/>
+                            <constraint firstItem="Te1-uO-dGO" firstAttribute="top" secondItem="RZ4-KQ-mDI" secondAttribute="top" constant="8" id="wwr-Uf-uut"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RZ4-KQ-mDI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ImT-VB-EFr"/>
+                <constraint firstAttribute="trailing" secondItem="RZ4-KQ-mDI" secondAttribute="trailing" id="Os1-WI-keD"/>
+                <constraint firstItem="RZ4-KQ-mDI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="QvA-rf-1am"/>
+                <constraint firstAttribute="bottom" secondItem="RZ4-KQ-mDI" secondAttribute="bottom" id="lLO-kz-bTk"/>
+            </constraints>
+            <size key="customSize" width="106" height="61"/>
+            <connections>
+                <outlet property="bgView" destination="RZ4-KQ-mDI" id="xSB-dk-WqU"/>
+                <outlet property="icon" destination="Te1-uO-dGO" id="bsV-CX-O5B"/>
+                <outlet property="title" destination="lUQ-xU-XPy" id="nMH-Qy-77I"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="96.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HouseRepairImg" width="40" height="40"/>
+    </resources>
+</document>

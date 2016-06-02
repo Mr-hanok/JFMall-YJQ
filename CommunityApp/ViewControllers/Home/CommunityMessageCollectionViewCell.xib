@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommunityMessageCollectionViewCell" id="gTV-IL-0wX" customClass="CommunityMessageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4u-jF-XKr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="propertyShuImg" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-8t-I90">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="ax7-oX-OLZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="dEz-XN-rvZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="propertyNoticeImg" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-53-ACH">
+                                <rect key="frame" x="5" y="11" width="87" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="6Tl-Nb-uxV"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgC-Cj-m4N">
+                                <rect key="frame" x="92" y="0.0" width="228" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="0Pt-uf-Tdg"/>
+                                    <constraint firstAttribute="height" constant="40" id="yuI-Ba-GIl"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LineDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="io9-6b-iz0">
+                                <rect key="frame" x="0.0" y="40" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="2dI-h3-ZJG"/>
+                                    <constraint firstAttribute="height" constant="1" id="WtQ-vX-Sci"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="io9-6b-iz0" firstAttribute="top" secondItem="jgC-Cj-m4N" secondAttribute="bottom" id="2HJ-yh-F8R"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="top" secondItem="e4u-jF-XKr" secondAttribute="top" constant="11" id="3my-zn-C7t"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="leading" secondItem="Zey-8t-I90" secondAttribute="trailing" id="Bex-eg-sRu"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="centerY" secondItem="Zey-8t-I90" secondAttribute="centerY" id="CHu-yq-can"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="top" secondItem="e4u-jF-XKr" secondAttribute="top" id="Nbf-gd-Tce"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="leading" secondItem="Zey-8t-I90" secondAttribute="trailing" constant="5" id="OYj-yr-Fnw"/>
+                            <constraint firstAttribute="bottom" secondItem="io9-6b-iz0" secondAttribute="bottom" constant="-1" id="P02-nM-6PD"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="top" secondItem="e4u-jF-XKr" secondAttribute="top" constant="11" id="PwG-ho-pPZ"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="leading" secondItem="fiM-53-ACH" secondAttribute="trailing" id="aTx-nC-ZkK"/>
+                            <constraint firstAttribute="height" constant="40" id="aW3-Jk-D2n"/>
+                            <constraint firstAttribute="width" constant="320" id="b7e-Sp-R9V"/>
+                            <constraint firstAttribute="bottom" secondItem="jgC-Cj-m4N" secondAttribute="bottom" id="c1J-nX-iwl"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="leading" secondItem="fiM-53-ACH" secondAttribute="trailing" id="cOg-vS-9H6"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="leading" secondItem="fiM-53-ACH" secondAttribute="trailing" id="g06-ug-BOJ"/>
+                            <constraint firstAttribute="trailing" secondItem="jgC-Cj-m4N" secondAttribute="trailing" id="jK5-gb-bW7"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="leading" secondItem="fiM-53-ACH" secondAttribute="trailing" id="k9J-cp-u67"/>
+                            <constraint firstAttribute="bottom" secondItem="fiM-53-ACH" secondAttribute="bottom" constant="11" id="mYb-kh-EOq"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="leading" secondItem="Zey-8t-I90" secondAttribute="trailing" id="oqR-Qe-ye3"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="top" secondItem="e4u-jF-XKr" secondAttribute="top" id="pJ3-jE-olP"/>
+                            <constraint firstAttribute="trailing" secondItem="io9-6b-iz0" secondAttribute="trailing" id="pXG-4e-ANG"/>
+                            <constraint firstItem="jgC-Cj-m4N" firstAttribute="top" secondItem="Zey-8t-I90" secondAttribute="top" id="pma-Uh-RSn"/>
+                            <constraint firstAttribute="bottom" secondItem="jgC-Cj-m4N" secondAttribute="bottom" id="qRO-q0-asR"/>
+                            <constraint firstItem="Zey-8t-I90" firstAttribute="leading" secondItem="e4u-jF-XKr" secondAttribute="leading" id="qzi-Cn-0Q9"/>
+                            <constraint firstAttribute="trailing" secondItem="jgC-Cj-m4N" secondAttribute="trailing" id="r3o-wD-ukY"/>
+                            <constraint firstItem="Zey-8t-I90" firstAttribute="top" secondItem="e4u-jF-XKr" secondAttribute="top" id="txx-QP-R4N"/>
+                            <constraint firstAttribute="bottom" secondItem="Zey-8t-I90" secondAttribute="bottom" id="uFM-VV-bIP"/>
+                            <constraint firstItem="io9-6b-iz0" firstAttribute="leading" secondItem="e4u-jF-XKr" secondAttribute="leading" id="v60-j0-m6c"/>
+                            <constraint firstAttribute="trailing" secondItem="jgC-Cj-m4N" secondAttribute="trailing" id="x4i-Rq-eZS"/>
+                            <constraint firstItem="fiM-53-ACH" firstAttribute="centerY" secondItem="jgC-Cj-m4N" secondAttribute="centerY" id="y8H-od-HBc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OYj-yr-Fnw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="e4u-jF-XKr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7Rw-nV-7BE"/>
+                <constraint firstItem="e4u-jF-XKr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kau-kB-BvK"/>
+                <constraint firstAttribute="trailing" secondItem="e4u-jF-XKr" secondAttribute="trailing" id="QtI-4s-INA"/>
+                <constraint firstAttribute="bottom" secondItem="e4u-jF-XKr" secondAttribute="bottom" id="S90-iO-vhl"/>
+            </constraints>
+            <size key="customSize" width="350" height="70"/>
+            <connections>
+                <outlet property="scrollview" destination="jgC-Cj-m4N" id="FsZ-Ec-kPK"/>
+            </connections>
+            <point key="canvasLocation" x="399" y="194"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LineDefaultImg" width="1" height="1"/>
+        <image name="propertyNoticeImg" width="92" height="20"/>
+        <image name="propertyShuImg" width="2" height="50"/>
+    </resources>
+</document>

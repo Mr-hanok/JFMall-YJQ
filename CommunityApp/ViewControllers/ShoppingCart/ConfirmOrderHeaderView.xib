@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmOrderHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJS-Vk-6SQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海澜之家连锁店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgD-UV-ZOb">
+                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LineDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="6KW-dL-g6d">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="L6z-Id-HJA"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="L6z-Id-HJA"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="L6z-Id-HJA"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="6KW-dL-g6d" secondAttribute="bottom" id="Ds5-GC-6px"/>
+                        <constraint firstItem="6KW-dL-g6d" firstAttribute="leading" secondItem="HJS-Vk-6SQ" secondAttribute="leading" id="Jq2-HQ-L6c"/>
+                        <constraint firstItem="EgD-UV-ZOb" firstAttribute="top" secondItem="HJS-Vk-6SQ" secondAttribute="top" id="Q98-SG-PKP"/>
+                        <constraint firstAttribute="bottom" secondItem="EgD-UV-ZOb" secondAttribute="bottom" id="TYb-UI-9Gy"/>
+                        <constraint firstAttribute="trailing" secondItem="EgD-UV-ZOb" secondAttribute="trailing" constant="8" id="cLW-Ly-jUc"/>
+                        <constraint firstAttribute="height" constant="25" id="d7C-OJ-8Z3">
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                        </constraint>
+                        <constraint firstItem="EgD-UV-ZOb" firstAttribute="leading" secondItem="HJS-Vk-6SQ" secondAttribute="leading" constant="8" id="kzH-GJ-rtl"/>
+                        <constraint firstAttribute="trailing" secondItem="6KW-dL-g6d" secondAttribute="trailing" id="oCa-oc-qZB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="EgD-UV-ZOb"/>
+                            <exclude reference="6KW-dL-g6d"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="d7C-OJ-8Z3"/>
+                            <exclude reference="Q98-SG-PKP"/>
+                            <exclude reference="TYb-UI-9Gy"/>
+                            <exclude reference="cLW-Ly-jUc"/>
+                            <exclude reference="kzH-GJ-rtl"/>
+                            <exclude reference="Ds5-GC-6px"/>
+                            <exclude reference="Jq2-HQ-L6c"/>
+                            <exclude reference="oCa-oc-qZB"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="EgD-UV-ZOb"/>
+                            <include reference="6KW-dL-g6d"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="d7C-OJ-8Z3"/>
+                            <include reference="Q98-SG-PKP"/>
+                            <include reference="TYb-UI-9Gy"/>
+                            <include reference="cLW-Ly-jUc"/>
+                            <include reference="kzH-GJ-rtl"/>
+                            <include reference="Ds5-GC-6px"/>
+                            <include reference="Jq2-HQ-L6c"/>
+                            <include reference="oCa-oc-qZB"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HJS-Vk-6SQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3qc-ff-knD"/>
+                <constraint firstItem="HJS-Vk-6SQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GqP-8R-9Lz"/>
+                <constraint firstAttribute="trailing" secondItem="HJS-Vk-6SQ" secondAttribute="trailing" id="wMb-uN-xf0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="HJS-Vk-6SQ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3qc-ff-knD"/>
+                    <exclude reference="GqP-8R-9Lz"/>
+                    <exclude reference="wMb-uN-xf0"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="HJS-Vk-6SQ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3qc-ff-knD"/>
+                    <include reference="GqP-8R-9Lz"/>
+                    <include reference="wMb-uN-xf0"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="hLine" destination="6KW-dL-g6d" id="oL2-7g-FAW"/>
+                <outlet property="storeName" destination="EgD-UV-ZOb" id="GsM-vF-8y9"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="LineDefaultImg" width="1" height="1"/>
+    </resources>
+</document>

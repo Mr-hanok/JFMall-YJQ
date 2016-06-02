@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstFooterView" id="U6b-Vx-4bR" customClass="FirstFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZnH-A8-eig">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GrR-4L-o7k"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZnH-A8-eig" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="0qx-rC-4Io"/>
+                <constraint firstAttribute="trailing" secondItem="ZnH-A8-eig" secondAttribute="trailing" id="8Eb-i2-bfy"/>
+                <constraint firstItem="ZnH-A8-eig" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="LGR-22-LJl"/>
+            </constraints>
+            <connections>
+                <outlet property="topLine" destination="ZnH-A8-eig" id="yD7-6b-3IO"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="268.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
