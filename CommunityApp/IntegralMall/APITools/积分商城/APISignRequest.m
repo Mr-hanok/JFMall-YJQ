@@ -9,15 +9,6 @@
 #import "APISignRequest.h"
 
 @implementation APISignRequest
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        JFPub_type
-        User_userId_uId
-    }
-    return self;
-}
 
 - (ApiAccessType)accessType
 {

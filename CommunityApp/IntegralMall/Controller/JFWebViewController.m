@@ -7,6 +7,7 @@
 //
 
 #import "JFWebViewController.h"
+#import "JFPrizeListViewController.h"
 
 @interface JFWebViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webview;
@@ -17,23 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"营销活动";
     [self setNavBarLeftItemAsBackArrow];
     self.webview.scalesPageToFit = YES;
     if (![self.bannerModel.jump_url hasPrefix:@"http://"]) {
         self.bannerModel.jump_url = [@"http://" stringByAppendingString:self.bannerModel.jump_url];
     }
-    NSURL *url = [NSURL URLWithString:self.bannerModel.jump_url];
+   self.title = self.bannerModel.title;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    LoginConfig *login = [LoginConfig Instance];
+    NSString *uid = [login userID];
+    NSString *urlStr = [NSString stringWithFormat:@"http://d.bjyijiequ.com/mallyjq/wxr/activityapp1.htm?userId=%@",uid];
+    NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     [self.webview loadRequest:request];
 }
-
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.webview loadHTMLString:@"" baseURL:nil];
-    [self.webview stopLoading];
-    [self.webview setDelegate:nil];
-    [self.webview removeFromSuperview];
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
 }
 #pragma mark - UIWebViewDelegat
@@ -54,6 +57,16 @@
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
     [HUDManager hideHUDView];
+    NSString *url = request.URL.description;
+    if ([url hasPrefix:@"app://mactivity1/list"]) {//我的中奖纪录->大转盘
+        [self pushWithVCClass:[JFPrizeListViewController class] properties:@{@"title":@"中奖纪录",@"active_type":@"1"}];
+        return NO;
+    }
+    if ([url hasPrefix:@"app://mactivity1/award"]) {//实物奖品去领奖
+        // app://mactivity1/award?prize_type=1&logid=145
+        
+    }
+    
     return YES;
 }
 @end

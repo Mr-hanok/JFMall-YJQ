@@ -393,6 +393,11 @@
 		3706E9F61CCF598400F399AF /* JFAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3706E9F51CCF598400F399AF /* JFAlterView.m */; };
 		3706E9F81CCF599A00F399AF /* JFAlterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3706E9F71CCF599A00F399AF /* JFAlterView.xib */; };
 		3706E9FC1CCF723B00F399AF /* HUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3706E9FB1CCF723B00F399AF /* HUDManager.m */; };
+		370E30071D000A370076768E /* JFPrizeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370E30051D000A370076768E /* JFPrizeListViewController.m */; };
+		370E30081D000A370076768E /* JFPrizeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370E30061D000A370076768E /* JFPrizeListViewController.xib */; };
+		370E300C1D000BA10076768E /* JFPrizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 370E300A1D000BA10076768E /* JFPrizeCell.m */; };
+		370E300D1D000BA10076768E /* JFPrizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370E300B1D000BA10076768E /* JFPrizeCell.xib */; };
+		370E30101D002F1B0076768E /* JFPrizeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 370E300F1D002F1B0076768E /* JFPrizeModel.m */; };
 		3710689C1CE07BAE002772AC /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 371068971CE07BAE002772AC /* APIClient.m */; };
 		3710689D1CE07BAE002772AC /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 371068991CE07BAE002772AC /* APIRequest.m */; };
 		3710689E1CE07BAE002772AC /* APIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710689B1CE07BAE002772AC /* APIResult.m */; };
@@ -407,6 +412,7 @@
 		372D82461CC4BE88003B816A /* IntegralMallHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D82441CC4BE88003B816A /* IntegralMallHomeViewController.xib */; };
 		372F2DD11CC5FEA200F91431 /* JFtest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372F2DD01CC5FEA200F91431 /* JFtest.xcassets */; };
 		372F2DD61CC606CC00F91431 /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F2DD51CC606CC00F91431 /* AdView.m */; };
+		37372EDD1D003BA900308462 /* APIPrizeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37372EDC1D003BA900308462 /* APIPrizeListRequest.m */; };
 		37461D461CF42F2300AD440D /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37461D441CF42F2300AD440D /* PersonalCenterViewController.m */; };
 		37461D471CF42F2400AD440D /* PersonalCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37461D451CF42F2300AD440D /* PersonalCenterViewController.xib */; };
 		374BBC4A1CD18FC5008C0BB4 /* QCSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 374BBC491CD18FC5008C0BB4 /* QCSlideSwitchView.m */; };
@@ -1450,6 +1456,14 @@
 		3706E9F71CCF599A00F399AF /* JFAlterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFAlterView.xib; sourceTree = "<group>"; };
 		3706E9FA1CCF723B00F399AF /* HUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDManager.h; sourceTree = "<group>"; };
 		3706E9FB1CCF723B00F399AF /* HUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDManager.m; sourceTree = "<group>"; };
+		370E30041D000A370076768E /* JFPrizeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPrizeListViewController.h; sourceTree = "<group>"; };
+		370E30051D000A370076768E /* JFPrizeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPrizeListViewController.m; sourceTree = "<group>"; };
+		370E30061D000A370076768E /* JFPrizeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPrizeListViewController.xib; sourceTree = "<group>"; };
+		370E30091D000BA10076768E /* JFPrizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPrizeCell.h; sourceTree = "<group>"; };
+		370E300A1D000BA10076768E /* JFPrizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPrizeCell.m; sourceTree = "<group>"; };
+		370E300B1D000BA10076768E /* JFPrizeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPrizeCell.xib; sourceTree = "<group>"; };
+		370E300E1D002F1B0076768E /* JFPrizeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPrizeModel.h; sourceTree = "<group>"; };
+		370E300F1D002F1B0076768E /* JFPrizeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPrizeModel.m; sourceTree = "<group>"; };
 		371068961CE07BAE002772AC /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		371068971CE07BAE002772AC /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		371068981CE07BAE002772AC /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
@@ -1476,6 +1490,8 @@
 		372F2DD01CC5FEA200F91431 /* JFtest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JFtest.xcassets; sourceTree = "<group>"; };
 		372F2DD41CC606CC00F91431 /* AdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
 		372F2DD51CC606CC00F91431 /* AdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
+		37372EDB1D003BA900308462 /* APIPrizeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIPrizeListRequest.h; sourceTree = "<group>"; };
+		37372EDC1D003BA900308462 /* APIPrizeListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIPrizeListRequest.m; sourceTree = "<group>"; };
 		37461D441CF42F2300AD440D /* PersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterViewController.m; sourceTree = "<group>"; };
 		37461D451CF42F2300AD440D /* PersonalCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCenterViewController.xib; sourceTree = "<group>"; };
 		374BBC481CD18FC5008C0BB4 /* QCSlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSlideSwitchView.h; sourceTree = "<group>"; };
@@ -3758,6 +3774,9 @@
 				3763CF451CF6EFD800B6752D /* JFWebViewController.h */,
 				3763CF461CF6EFD800B6752D /* JFWebViewController.m */,
 				3763CF471CF6EFD800B6752D /* JFWebViewController.xib */,
+				370E30041D000A370076768E /* JFPrizeListViewController.h */,
+				370E30051D000A370076768E /* JFPrizeListViewController.m */,
+				370E30061D000A370076768E /* JFPrizeListViewController.xib */,
 				37FB6D771CC631CE004AFCAC /* JFShoppingCarViewController.h */,
 				37FB6D781CC631CE004AFCAC /* JFShoppingCarViewController.m */,
 				37FB6D791CC631CE004AFCAC /* JFShoppingCarViewController.xib */,
@@ -3826,6 +3845,9 @@
 				37D2ABB01CC5D5AB00BA82E1 /* JFHomeHeadView.h */,
 				37D2ABB11CC5D5AB00BA82E1 /* JFHomeHeadView.m */,
 				37D2ABB21CC5D5AB00BA82E1 /* JFHomeHeadView.xib */,
+				370E30091D000BA10076768E /* JFPrizeCell.h */,
+				370E300A1D000BA10076768E /* JFPrizeCell.m */,
+				370E300B1D000BA10076768E /* JFPrizeCell.xib */,
 			);
 			path = IntegralMallHome;
 			sourceTree = "<group>";
@@ -3910,6 +3932,8 @@
 				37FFBFFC1CEEE9F70068C5D4 /* JFOrderDetailModel.m */,
 				37FFBFE91CEE9FC20068C5D4 /* JFTasKCenterModel.h */,
 				37FFBFEA1CEE9FC20068C5D4 /* JFTasKCenterModel.m */,
+				370E300E1D002F1B0076768E /* JFPrizeModel.h */,
+				370E300F1D002F1B0076768E /* JFPrizeModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3953,6 +3977,8 @@
 				3787C1321CEAAE280017A3CC /* APISignRequest.m */,
 				3787C1341CEAAF380017A3CC /* APIIntegralDetailRequest.h */,
 				3787C1351CEAAF380017A3CC /* APIIntegralDetailRequest.m */,
+				37372EDB1D003BA900308462 /* APIPrizeListRequest.h */,
+				37372EDC1D003BA900308462 /* APIPrizeListRequest.m */,
 			);
 			path = "积分商城";
 			sourceTree = "<group>";
@@ -5558,6 +5584,7 @@
 				61D521FF1BE31AE1009C2787 /* MyVisitorViewController.xib in Resources */,
 				37D2ABAF1CC5D0C000BA82E1 /* JFHomeGoodsCell.xib in Resources */,
 				61660ABC1C32894E00F5BC8C /* 123.jpg in Resources */,
+				370E300D1D000BA10076768E /* JFPrizeCell.xib in Resources */,
 				29E648251BF341B600EBEAB6 /* 服务协议.html in Resources */,
 				E8BA85601C476E9A00628E4C /* UMSCommentInputControlleriPad.xib in Resources */,
 				2B07F6B71B71FCCE00496F71 /* EasyLiveCollectionViewCell.xib in Resources */,
@@ -5608,6 +5635,7 @@
 				25ADD7C41B57AE20004A68A3 /* PersonalCenterApplyRefundTableViewCell.xib in Resources */,
 				3754CE2D1CD98F74005D4971 /* JFOrderFollowViewController.xib in Resources */,
 				258222311B465BB40077A1ED /* HousesServicesHouseDescCollectionViewCell.xib in Resources */,
+				370E30081D000A370076768E /* JFPrizeListViewController.xib in Resources */,
 				0297184F1B28134E00BC58D3 /* RoadAddressManageViewController.xib in Resources */,
 				3793FC881CC9C1AC0094C2E3 /* JFConvertCenterViewController.xib in Resources */,
 				E8B4624F1C46433D00D89E78 /* LaunchScreen.xib in Resources */,
@@ -6025,7 +6053,9 @@
 				654ECC461B672E960086BAF0 /* ResultModel.m in Sources */,
 				65B1A52D1B789560001D4BE9 /* CouponSelectViewController.m in Sources */,
 				029718571B2820E200BC58D3 /* RoadData.m in Sources */,
+				370E30071D000A370076768E /* JFPrizeListViewController.m in Sources */,
 				3754CE311CD99A83005D4971 /* JFOrederFollowCell.m in Sources */,
+				370E300C1D000BA10076768E /* JFPrizeCell.m in Sources */,
 				61D522001BE31AE1009C2787 /* VisitorDetailViewController.m in Sources */,
 				6520DBAC1B86E86E00B863C4 /* FilterCell.m in Sources */,
 				657581EF1B43B28700FFC693 /* BlankCollectionViewCell.m in Sources */,
@@ -6171,6 +6201,7 @@
 				37FFBFFD1CEEE9F70068C5D4 /* JFOrderDetailModel.m in Sources */,
 				257FBFF21B32924D009E9B0C /* QuestionnaireSurveySubjectModel.m in Sources */,
 				252DFC1F1B71A81700810C0A /* HouseKeepViewController.m in Sources */,
+				37372EDD1D003BA900308462 /* APIPrizeListRequest.m in Sources */,
 				25772DFC1B4A148E002C5F06 /* CommonFilterDataView.m in Sources */,
 				374BBC541CD830BB008C0BB4 /* JFGoodsDetailViewController.m in Sources */,
 				65F7E7A81B291F2800AA04A5 /* WaresDetailViewController.m in Sources */,
@@ -6334,6 +6365,7 @@
 				6583F8D01B6871DC00D4CA7E /* UseCouponsViewController.m in Sources */,
 				2B07F6A91B71D23B00496F71 /* BenefitPeopleCollectionViewCell.m in Sources */,
 				E82244841CBB46B5001BD23A /* ComTableViewCell.m in Sources */,
+				370E30101D002F1B0076768E /* JFPrizeModel.m in Sources */,
 				653411BD1B256109006ECE85 /* BusinessDetailViewController.m in Sources */,
 				651735EA1B425F0D00A276E3 /* ShopCartModel.m in Sources */,
 				02AB0CA91B2169F300F1EE2C /* CategorySelectedViewController.m in Sources */,

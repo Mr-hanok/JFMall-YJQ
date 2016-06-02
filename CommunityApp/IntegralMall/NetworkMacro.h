@@ -62,3 +62,5 @@
 #define JFOrderDetailAction            @"m/order_detail.htm"
 /**删除订单接口*/
 #define JFOrderDelAction               @"m/deleteOrder.htm"
+/**奖品列表*/
+#define JFPrizeListAction               @"m/myWinList.htm"

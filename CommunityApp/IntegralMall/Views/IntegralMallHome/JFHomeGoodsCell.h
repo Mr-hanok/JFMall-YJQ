@@ -20,6 +20,6 @@
 
 @property (strong, nonatomic) NSIndexPath *indexPath;
 
-+ (JFHomeGoodsCell  *)collectview:(UICollectionView *)collectview cellForRowInCollectviewIndexPath:(NSIndexPath *)indexPath;
+//+ (JFHomeGoodsCell  *)collectview:(UICollectionView *)collectview cellForRowInCollectviewIndexPath:(NSIndexPath *)indexPath;
 - (void)configGoodsCellWithGoodsModel:(JFHomeGoodsModel *)model;
 @end

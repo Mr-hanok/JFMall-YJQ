@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,13 +9,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JFHomeGoodsCell" id="gTV-IL-0wX" customClass="JFHomeGoodsCell">
-            <rect key="frame" x="0.0" y="0.0" width="236" height="242"/>
+            <rect key="frame" x="0.0" y="0.0" width="236" height="336"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="236" height="242"/>
+                <rect key="frame" x="0.0" y="0.0" width="236" height="336"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jf-testgood" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-x3-c7O">
-                        <rect key="frame" x="0.0" y="0.0" width="236" height="164"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jf-testgood" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-x3-c7O">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="236"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="zAN-x3-c7O" secondAttribute="height" multiplier="1:1" id="P0h-sG-6GP"/>
                         </constraints>
@@ -23,8 +23,8 @@
                             <rect key="frame" x="0.0" y="0.0" width="263" height="263"/>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="500积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zie-30-mma">
-                        <rect key="frame" x="0.0" y="269" width="100" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zie-30-mma">
+                        <rect key="frame" x="0.0" y="264" width="100" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="2AJ-SS-lkA"/>
                         </constraints>
@@ -35,8 +35,8 @@
                             <rect key="frame" x="0.0" y="296" width="100" height="18"/>
                         </variation>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="￥199" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmi-Eb-Uuv">
-                        <rect key="frame" x="110" y="269" width="40.5" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥199" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmi-Eb-Uuv">
+                        <rect key="frame" x="110" y="264" width="40.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
                             <rect key="frame" x="110" y="296" width="40.5" height="18"/>
                         </variation>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y8U-GK-7KX">
-                        <rect key="frame" x="110" y="278" width="40.5" height="1"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8U-GK-7KX">
+                        <rect key="frame" x="110" y="273" width="40.5" height="1"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="feg-Po-meU"/>
@@ -54,7 +54,7 @@
                             <rect key="frame" x="110" y="305" width="40.5" height="1"/>
                         </variation>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[物业自营]新疆特工特级葡萄干" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjZ-Nt-n0f">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[物业自营]新疆特工特级葡萄干" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjZ-Nt-n0f">
                         <rect key="frame" x="4" y="241" width="228" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,14 +81,14 @@
                 <constraint firstItem="zie-30-mma" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oq8-PL-YVe"/>
                 <constraint firstAttribute="trailing" secondItem="NjZ-Nt-n0f" secondAttribute="trailing" constant="4" id="xUQ-KE-NJt"/>
             </constraints>
-            <size key="customSize" width="283" height="334"/>
+            <size key="customSize" width="283" height="428"/>
             <connections>
                 <outlet property="goodPriceLabel" destination="rmi-Eb-Uuv" id="uXr-Vm-1fq"/>
                 <outlet property="goodsImageIV" destination="zAN-x3-c7O" id="Z3L-0y-Dp0"/>
                 <outlet property="goodsIntegralLabel" destination="zie-30-mma" id="hmJ-W7-gGn"/>
                 <outlet property="goodsNameLabel" destination="NjZ-Nt-n0f" id="4Vb-Sj-OVp"/>
             </connections>
-            <point key="canvasLocation" x="-80.5" y="120"/>
+            <point key="canvasLocation" x="-81" y="167"/>
         </collectionViewCell>
     </objects>
     <resources>

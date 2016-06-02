@@ -80,7 +80,7 @@
                 <outlet property="nameLabel" destination="Z3t-4g-5Lc" id="hfp-fN-7Yo"/>
                 <outlet property="progressLabel" destination="s27-Mr-1hE" id="VMl-wE-zeJ"/>
             </connections>
-            <point key="canvasLocation" x="364.5" y="146"/>
+            <point key="canvasLocation" x="264.5" y="155"/>
         </tableViewCell>
     </objects>
     <resources>
