@@ -27,8 +27,8 @@
                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeB-HD-v33">
-                        <rect key="frame" x="264" y="13" width="25.5" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeB-HD-v33">
+                        <rect key="frame" x="269.5" y="13" width="25.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.91764705882352937" green="0.49411764705882355" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -36,18 +36,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="SeB-HD-v33" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Bt-U6-WTh"/>
-                    <constraint firstItem="hdO-bS-8YS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="CpS-4E-0BY"/>
                     <constraint firstItem="hdO-bS-8YS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FQ7-ld-ut5"/>
                     <constraint firstItem="c3p-Qy-oqx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JqU-ik-x3a"/>
                     <constraint firstItem="c3p-Qy-oqx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="L0a-lC-Lwz"/>
-                    <constraint firstAttribute="trailing" secondItem="SeB-HD-v33" secondAttribute="trailing" constant="30" id="ak9-ra-xG1"/>
+                    <constraint firstAttribute="trailing" secondItem="SeB-HD-v33" secondAttribute="trailing" constant="25" id="ak9-ra-xG1"/>
                     <constraint firstItem="hdO-bS-8YS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="2:7" id="bCN-nY-Mul"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="CpS-4E-0BY"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="integralLabel" destination="SeB-HD-v33" id="wL4-kX-jIj"/>

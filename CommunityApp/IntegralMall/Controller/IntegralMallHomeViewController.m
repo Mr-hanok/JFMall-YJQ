@@ -42,7 +42,8 @@
     [super viewDidLoad];
     [self setNavBarLeftItemAsBackArrow];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.collectionView.backgroundColor = self.view.backgroundColor;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+//    self.collectionView.backgroundColor = self.view.backgroundColor;
     self.categorysArray = [NSMutableArray array];
     self.bannerArray = [NSMutableArray array];
     self.bannerUrlArray = [NSMutableArray array];

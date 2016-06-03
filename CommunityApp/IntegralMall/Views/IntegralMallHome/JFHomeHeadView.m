@@ -29,7 +29,7 @@
 }
 
 - (void)loadAdDateWithImageUrlArray:(NSMutableArray *)array signDays:(NSString *)signDays signIntegral:(NSString *)signIntegral integral:(NSString *)integral sectionTitle:(NSString *)title{
-    ad = [AdView adScrollViewWithFrame:CGRectMake(0, 0, APP_SCREEN_WIDTH, self.adView.height) imageLinkURL:array placeHoderImageName:@"AdSlideDefaultImg" pageControlShowStyle:UIPageControlShowStyleCenter];
+    ad = [AdView adScrollViewWithFrame:CGRectMake(0, 0, APP_SCREEN_WIDTH, self.adView.height-0.5) imageLinkURL:array placeHoderImageName:@"AdSlideDefaultImg" pageControlShowStyle:UIPageControlShowStyleCenter];
     ad.adMoveTime = 2.5f;
     __weak typeof(self) weakself = self;
     ad.callBack = ^(NSInteger index,NSString * imageURL)

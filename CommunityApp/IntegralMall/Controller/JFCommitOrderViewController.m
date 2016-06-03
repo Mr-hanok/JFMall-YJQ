@@ -239,7 +239,9 @@
         NSString *name =self.nameLabel.text;
         NSString *address =self.addressLabel.text ;
         NSString *phone = self.phoneLabel.text;
-        
+        NSString *log_id = [ValueUtils stringFromObject:self.log_id];
+        NSString *order_flag = [ValueUtils stringFromObject:self.order_flag];
+    
 //        if (self.isPrize) {//兑奖品-》提交订单
 //            
 //            
@@ -264,7 +266,9 @@
                                                     cart_session:self.cart_session
                                                             name:name
                                                           mobile:phone
-                                                         address:address];
+                                                         address:address
+                                                          log_id:log_id
+                                                      order_flag:order_flag];
                     [APIClient execute:self.apiOrderSunmit];
                     [weakAlter removeFromSuperview];
                     break;

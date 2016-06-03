@@ -69,7 +69,7 @@
 - (void)configCellWithOrderModel:(JFOrderModel *)model{
     self.model = model;
     
-    self.integralLabel.text = [NSString stringWithFormat:@"共%@件商品 合计：%@积分",model.goods_count,model.total_price];
+    self.integralLabel.text = [NSString stringWithFormat:@"共%@件商品  合计:%@积分",model.goods_count,model.total_price];
     self.storeNameLabel.text = model.store_name;
     
     [self.collectview removeFromSuperview];

@@ -34,7 +34,7 @@
     
     LoginConfig *login = [LoginConfig Instance];
     NSString *uid = [login userID];
-    NSString *urlStr = [NSString stringWithFormat:@"http://d.bjyijiequ.com/mallyjq/wxr/activityapp1.htm?userId=%@",uid];
+    NSString *urlStr = [NSString stringWithFormat:@"http://d.bjyijiequ.com/mallyjq/wxr/activityapp1.htm?userId=%@&pub_type=3",uid];
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     [self.webview loadRequest:request];
@@ -97,7 +97,11 @@
     if (api == self.apiAddShopCar) {//加入购物车
         
         NSString *gc_id = [ValueUtils stringFromObject:[sr.dic objectForKey:@"gc_id"]];
-        [self pushWithVCClassName:@"JFCommitOrderViewController" properties:@{@"title":@"提交订单",@"goodsId":gc_id,@"isPrize":@YES}];
+        [self pushWithVCClassName:@"JFCommitOrderViewController" properties:@{@"title":@"提交订单",
+                       @"goodsId":gc_id,
+                       @"isPrize":@YES,
+                        @"log_id":self.logid,
+                    @"order_flag":@"1"}];
     }
 }
 

@@ -34,7 +34,7 @@
     self.categorysArray = [NSMutableArray array];
     self.bannerArray = [NSMutableArray array];
     self.bannerUrlArray = [NSMutableArray array];
-    self.collectview.backgroundColor = self.view.backgroundColor;
+    self.collectview.backgroundColor = [UIColor whiteColor];
     self.rightNaviView.frame = CGRectMake((Screen_Width-60), 7, 60, 30);
     [self.shopCarNumBtn setTitle:@"0" forState:UIControlStateNormal];
     [self setNavBarItemRightView:self.rightNaviView];

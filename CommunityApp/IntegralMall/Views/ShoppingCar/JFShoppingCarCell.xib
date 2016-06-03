@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -36,9 +35,9 @@
                             <constraint firstAttribute="height" constant="75" id="iki-7o-zai"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="男裤修身韩版男裤修身" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-w8-Qhe">
-                        <rect key="frame" x="113" y="10" width="139" height="36"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="男裤修身韩版男裤修身" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-w8-Qhe">
+                        <rect key="frame" x="113" y="10" width="142" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -52,7 +51,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-ox-jmh">
-                        <rect key="frame" x="186" y="66" width="22" height="22"/>
+                        <rect key="frame" x="189" y="66" width="22" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="SgV-sa-5C7"/>
                             <constraint firstAttribute="width" constant="22" id="Xiu-ix-Ygc"/>
@@ -64,13 +63,13 @@
                         </connections>
                     </button>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="42P-uF-iEr">
-                        <rect key="frame" x="208" y="66" width="22" height="22"/>
+                        <rect key="frame" x="211" y="66" width="22" height="22"/>
                         <color key="textColor" red="0.91764705882352937" green="0.49411764705882355" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-Bi-1iD">
-                        <rect key="frame" x="230" y="66" width="22" height="22"/>
+                        <rect key="frame" x="233" y="66" width="22" height="22"/>
                         <state key="normal" backgroundImage="PlusIconNor"/>
                         <state key="highlighted" image="PlusIconPre"/>
                         <connections>
@@ -93,7 +92,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="751" text="男裤修身韩版男裤修身" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIB-11-tIX">
-                        <rect key="frame" x="113" y="46" width="197" height="15"/>
+                        <rect key="frame" x="113" y="48.5" width="197" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -103,9 +102,6 @@
                     <constraint firstItem="BIB-11-tIX" firstAttribute="leading" secondItem="dPh-w8-Qhe" secondAttribute="leading" id="2TD-RQ-iyi"/>
                     <constraint firstItem="42P-uF-iEr" firstAttribute="leading" secondItem="Faf-ox-jmh" secondAttribute="trailing" id="3cK-9X-Q3c"/>
                     <constraint firstItem="kX2-Bi-1iD" firstAttribute="trailing" secondItem="dPh-w8-Qhe" secondAttribute="trailing" id="3iC-NW-wmF"/>
-                    <constraint firstItem="OUU-Iv-D4n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="3if-XG-zcU"/>
-                    <constraint firstItem="Faf-ox-jmh" firstAttribute="leading" secondItem="dPh-w8-Qhe" secondAttribute="leading" id="5T7-8X-wcA"/>
-                    <constraint firstAttribute="trailing" secondItem="IER-Oc-tul" secondAttribute="trailing" constant="8" id="5mo-kc-Hfp"/>
                     <constraint firstItem="OUU-Iv-D4n" firstAttribute="leading" secondItem="FdP-Ea-0oQ" secondAttribute="trailing" constant="2" id="9Uh-wj-gbo"/>
                     <constraint firstItem="kX2-Bi-1iD" firstAttribute="centerY" secondItem="42P-uF-iEr" secondAttribute="centerY" id="9l7-zr-iLH"/>
                     <constraint firstItem="NIZ-fF-BFI" firstAttribute="top" secondItem="dPh-w8-Qhe" secondAttribute="top" id="A3i-2M-Rsc"/>
@@ -115,33 +111,19 @@
                     <constraint firstAttribute="bottom" secondItem="Faf-ox-jmh" secondAttribute="bottom" constant="7" id="I3m-gY-bqV"/>
                     <constraint firstItem="IER-Oc-tul" firstAttribute="leading" secondItem="dPh-w8-Qhe" secondAttribute="leading" id="L3E-xo-RXY"/>
                     <constraint firstItem="FdP-Ea-0oQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="MOw-4A-25q"/>
-                    <constraint firstItem="kX2-Bi-1iD" firstAttribute="top" secondItem="BIB-11-tIX" secondAttribute="bottom" constant="5" id="NKE-r4-ObC"/>
+                    <constraint firstItem="kX2-Bi-1iD" firstAttribute="top" secondItem="BIB-11-tIX" secondAttribute="bottom" constant="3" id="NKE-r4-ObC"/>
                     <constraint firstItem="FdP-Ea-0oQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NaM-A0-pis"/>
                     <constraint firstAttribute="trailing" secondItem="BIB-11-tIX" secondAttribute="trailing" constant="10" id="PLF-Vt-nee"/>
                     <constraint firstItem="kX2-Bi-1iD" firstAttribute="leading" secondItem="42P-uF-iEr" secondAttribute="trailing" id="RrD-FT-dhG"/>
                     <constraint firstItem="42P-uF-iEr" firstAttribute="width" secondItem="Faf-ox-jmh" secondAttribute="width" id="SgO-nY-o06"/>
-                    <constraint firstItem="kX2-Bi-1iD" firstAttribute="trailing" secondItem="NIZ-fF-BFI" secondAttribute="trailing" id="SpP-fm-1Zx"/>
                     <constraint firstAttribute="bottom" secondItem="IER-Oc-tul" secondAttribute="bottom" constant="12" id="VAm-Wh-cFQ"/>
                     <constraint firstAttribute="trailing" secondItem="NIZ-fF-BFI" secondAttribute="trailing" constant="10" id="Vo0-49-3vP"/>
-                    <constraint firstItem="kX2-Bi-1iD" firstAttribute="trailing" secondItem="dPh-w8-Qhe" secondAttribute="trailing" id="an8-6j-Eh8"/>
                     <constraint firstItem="42P-uF-iEr" firstAttribute="height" secondItem="Faf-ox-jmh" secondAttribute="height" id="aqp-wA-tcC"/>
                     <constraint firstItem="kX2-Bi-1iD" firstAttribute="height" secondItem="Faf-ox-jmh" secondAttribute="height" id="dzs-oa-Uil"/>
                     <constraint firstItem="OUU-Iv-D4n" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f41-6F-UH9"/>
-                    <constraint firstItem="BIB-11-tIX" firstAttribute="top" secondItem="dPh-w8-Qhe" secondAttribute="bottom" id="pEc-BU-oX5"/>
-                    <constraint firstItem="BIB-11-tIX" firstAttribute="centerY" secondItem="OUU-Iv-D4n" secondAttribute="centerY" id="rq6-So-RXk"/>
                     <constraint firstItem="dPh-w8-Qhe" firstAttribute="top" secondItem="OUU-Iv-D4n" secondAttribute="top" id="svg-7N-EKr"/>
-                    <constraint firstItem="NIZ-fF-BFI" firstAttribute="leading" secondItem="dPh-w8-Qhe" secondAttribute="trailing" constant="8" id="xED-aV-5AR"/>
+                    <constraint firstItem="NIZ-fF-BFI" firstAttribute="leading" secondItem="dPh-w8-Qhe" secondAttribute="trailing" constant="5" id="xED-aV-5AR"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="3if-XG-zcU"/>
-                        <exclude reference="rq6-So-RXk"/>
-                        <exclude reference="5mo-kc-Hfp"/>
-                        <exclude reference="5T7-8X-wcA"/>
-                        <exclude reference="SpP-fm-1Zx"/>
-                        <exclude reference="an8-6j-Eh8"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="goodMinusBtn" destination="Faf-ox-jmh" id="2v9-1K-xua"/>

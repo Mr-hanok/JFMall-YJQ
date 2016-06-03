@@ -36,7 +36,7 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥199" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmi-Eb-Uuv">
-                        <rect key="frame" x="110" y="264" width="40.5" height="18"/>
+                        <rect key="frame" x="185" y="264" width="40.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                         </variation>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8U-GK-7KX">
-                        <rect key="frame" x="110" y="273" width="40.5" height="1"/>
+                        <rect key="frame" x="185.5" y="273" width="40.5" height="1"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="feg-Po-meU"/>
@@ -72,6 +72,7 @@
                 <constraint firstItem="y8U-GK-7KX" firstAttribute="width" secondItem="rmi-Eb-Uuv" secondAttribute="width" id="5aL-l3-nEj"/>
                 <constraint firstItem="zie-30-mma" firstAttribute="top" secondItem="NjZ-Nt-n0f" secondAttribute="bottom" constant="5" id="9Nn-Hy-btC"/>
                 <constraint firstItem="zAN-x3-c7O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BKX-8J-ajh"/>
+                <constraint firstAttribute="trailing" secondItem="rmi-Eb-Uuv" secondAttribute="trailing" constant="10" id="IWj-wX-asr"/>
                 <constraint firstItem="rmi-Eb-Uuv" firstAttribute="leading" secondItem="zie-30-mma" secondAttribute="trailing" constant="10" id="Qni-sU-00f"/>
                 <constraint firstItem="NjZ-Nt-n0f" firstAttribute="top" secondItem="zAN-x3-c7O" secondAttribute="bottom" constant="5" id="YqZ-AB-KlT"/>
                 <constraint firstItem="y8U-GK-7KX" firstAttribute="centerX" secondItem="rmi-Eb-Uuv" secondAttribute="centerX" id="dxD-WU-Iog"/>
@@ -82,6 +83,11 @@
                 <constraint firstAttribute="trailing" secondItem="NjZ-Nt-n0f" secondAttribute="trailing" constant="4" id="xUQ-KE-NJt"/>
             </constraints>
             <size key="customSize" width="283" height="428"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Qni-sU-00f"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="goodPriceLabel" destination="rmi-Eb-Uuv" id="uXr-Vm-1fq"/>
                 <outlet property="goodsImageIV" destination="zAN-x3-c7O" id="Z3L-0y-Dp0"/>

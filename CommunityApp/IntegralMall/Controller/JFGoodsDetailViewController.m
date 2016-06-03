@@ -22,7 +22,6 @@
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 @property (weak, nonatomic) IBOutlet UIView *goodsImageView;//商品图片view
-@property (weak, nonatomic) IBOutlet UILabel *goodsTaglabel;
 @property (weak, nonatomic) IBOutlet UILabel *goodsNamelabel;
 @property (weak, nonatomic) IBOutlet UILabel *goodsIntegralLabel;
 @property (weak, nonatomic) IBOutlet UILabel *goodsPriceLabel;
@@ -223,7 +222,6 @@
 #pragma mark - private methods
 - (void)installUIWithModel:(JFGoodsDetailModel *)model{
     
-    self.goodsTaglabel.text = [NSString stringWithFormat:@"%@",@""];
     self.goodsNamelabel.text = model.goods_name;
     self.goodsIntegralLabel.text = [NSString stringWithFormat:@"%@积分",model.goods_price];
     self.goodsPriceLabel.text = [NSString stringWithFormat:@"¥%@",model.store_price];

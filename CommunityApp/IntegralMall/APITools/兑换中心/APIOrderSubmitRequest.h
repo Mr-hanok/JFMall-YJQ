@@ -14,5 +14,7 @@
                   cart_session:(NSString *)cart_session
                           name:(NSString *)name
                         mobile:(NSString *)mobile
-                       address:(NSString *)address;
+                       address:(NSString *)address
+                        log_id:(NSString *)log_id
+                    order_flag:(NSString *)order_flag;
 @end

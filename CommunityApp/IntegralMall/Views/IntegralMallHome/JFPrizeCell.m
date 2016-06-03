@@ -50,9 +50,10 @@
 
 - (void)configCellWithModel:(JFPrizeModel *)model{
     self.model = model;
+    NSString *time = [model.time substringToIndex:16];
     if ([model.prize_type isEqualToString:@"2"]) {//积分奖
         self.integralLabel.text = model.prize_name;
-        self.time1Label.text = model.time;
+        self.time1Label.text = time;
         if ([model.award_status isEqualToString:@"1"]) {
             [self.state1Btn setTitle:@"已领取" forState:UIControlStateNormal];
             [self.state1Btn setBackgroundColor:HEXCOLOR(0xd9d9d9)];
@@ -65,7 +66,7 @@
         [self.imageIV sd_setImageWithURL:[NSURL URLWithString:model.goods_pic] placeholderImage:[UIImage imageNamed:@"ShopCartWaresDefaultImg"]];
         self.goodsNameLabel.text = model.prize_name;
         self.goodsSpecLabel.text = @"";
-        self.time2Label.text = model.time;
+        self.time2Label.text = time;
         if ([model.award_status isEqualToString:@"1"]) {
             [self.state2Btn setTitle:@"已领取" forState:UIControlStateNormal];
             [self.state2Btn setBackgroundColor:HEXCOLOR(0xd9d9d9)];
