@@ -20,25 +20,24 @@
                         <color key="textColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-6-1 06:01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-XG-hGx">
+                        <rect key="frame" x="95" y="1" width="100.5" height="41.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-lr-uWl">
-                        <rect key="frame" x="295" y="1" width="50" height="41.5"/>
+                        <rect key="frame" x="295" y="7" width="50" height="30"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="o2y-oI-Obe"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <state key="normal" title="已领取">
-                            <color key="titleColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </state>
+                        <state key="normal" title="已领取"/>
                         <connections>
                             <action selector="state1BtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0cu-vF-p63"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-6-1 06:01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-XG-hGx">
-                        <rect key="frame" x="95" y="1" width="107" height="41.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="c4m-gh-DvQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="5xV-WE-KTw"/>
@@ -47,6 +46,7 @@
                     <constraint firstItem="E7g-XG-hGx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="BvX-hb-yAb"/>
                     <constraint firstItem="Vkf-lr-uWl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="EeF-au-NbK"/>
                     <constraint firstAttribute="bottom" secondItem="c4m-gh-DvQ" secondAttribute="bottom" constant="1" id="HwM-i4-GFG"/>
+                    <constraint firstItem="Vkf-lr-uWl" firstAttribute="centerY" secondItem="E7g-XG-hGx" secondAttribute="centerY" id="NXZ-Sc-N7c"/>
                     <constraint firstAttribute="trailing" secondItem="Vkf-lr-uWl" secondAttribute="trailing" constant="30" id="Pbd-Q0-78Y"/>
                     <constraint firstItem="E7g-XG-hGx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="VYt-FE-gbZ"/>
                     <constraint firstItem="E7g-XG-hGx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="95" id="YLg-9B-4ic"/>
@@ -55,6 +55,8 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="VYt-FE-gbZ"/>
+                        <exclude reference="6py-G8-Oxg"/>
+                        <exclude reference="EeF-au-NbK"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
@@ -116,13 +118,12 @@
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jul-wH-j1C">
                         <rect key="frame" x="295" y="58.5" width="50" height="30"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.40784313729999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="xvD-7q-YfR"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <state key="normal" title="已领取">
-                            <color key="titleColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </state>
+                        <state key="normal" title="已领取"/>
                         <connections>
                             <action selector="state2BtnClick:" destination="wkO-ik-1oC" eventType="touchUpInside" id="jMa-NE-cY9"/>
                         </connections>

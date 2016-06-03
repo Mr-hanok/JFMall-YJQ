@@ -10,11 +10,14 @@
 #import "JFPrizeCell.h"
 #import "JFPrizeModel.h"
 #import "APIPrizeListRequest.h"
+#import "APIAceptPrizeRequest.h"
 
 @interface JFPrizeListViewController ()<UITableViewDataSource,UITableViewDelegate,APIRequestDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic, strong) APIPrizeListRequest *apiPrizeList;
+@property (nonatomic, strong) APIAceptPrizeRequest *apiAceptPrize;
+@property (nonatomic, strong) NSIndexPath *indexpath;
 
 @end
 
@@ -26,6 +29,7 @@
     self.array = [NSMutableArray array];
     self.tableview.backgroundColor = self.view.backgroundColor;
     self.tableview.tableFooterView = [[UIView alloc]init];
+    self.apiAceptPrize = [[APIAceptPrizeRequest alloc]initWithDelegate:self];
     
     [HUDManager showLoadingHUDView:kWindow];
     self.apiPrizeList = [[APIPrizeListRequest alloc]initWithDelegate:self];
@@ -64,6 +68,11 @@
         
         [self.tableview reloadData];
     }
+    if (api == self.apiAceptPrize) {//接受奖品
+        JFPrizeModel *model = self.array[self.indexpath.row];
+        model.award_status = @"1";
+        [self.tableview reloadRowsAtIndexPaths:@[self.indexpath] withRowAnimation:UITableViewRowAnimationNone];
+    }
 
 }
 
@@ -88,6 +97,17 @@
     JFPrizeModel *model = self.array[indexPath.row];
     JFPrizeCell *cell = [JFPrizeCell tableView:self.tableview cellForRowInTableViewIndexPath:indexPath prize_type:model.prize_type];
     [cell configCellWithModel:model];
+    cell.callBackPrize = ^(NSString *pid,NSString *type){
+        if ([type isEqualToString:@"1"]) {//实物奖品
+            
+        }
+        if ([type isEqualToString:@"2"]) {//积分奖品
+            self.indexpath = indexPath;
+            [HUDManager showLoadingHUDView:self.view];
+            [self.apiAceptPrize setApiParamsWithLog_id:model.pid];
+            [APIClient execute:self.apiAceptPrize];
+        }
+    };
     return cell;
 }
 //设置分割线距离0

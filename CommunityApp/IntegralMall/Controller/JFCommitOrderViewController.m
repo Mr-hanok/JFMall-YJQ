@@ -66,6 +66,12 @@
     self.nameLabel.text = @"请选择收货人";
     self.phoneLabel.text = @"";
     self.addressLabel.text = @"请选择收货人地址";
+    
+    if (self.isPrize) {//兑奖品-》提交订单
+        [self.commitBtn setTitle:@"马上领取" forState:UIControlStateNormal];
+    }else{//正常购物
+        [self.commitBtn setTitle:@"提交订单" forState:UIControlStateNormal];
+    }
 
     // SectionHeaderNib
     UINib *headerNib = [UINib nibWithNibName:@"JFOrderHeadView" bundle:[NSBundle mainBundle]];
@@ -226,13 +232,19 @@
  */
 - (IBAction)commitBtnClick:(UIButton *)sender {
     
-    if ([sender.titleLabel.text isEqualToString:@"提交订单"]) {
         if (!self.isAddressHave) {
             [HUDManager showWarningWithText:@"请选择收货地址!"];
             return;
         }
         NSString *name =self.nameLabel.text;
         NSString *address =self.addressLabel.text ;
+        NSString *phone = self.phoneLabel.text;
+        
+//        if (self.isPrize) {//兑奖品-》提交订单
+//            
+//            
+//           // return;
+//        }
         
         JFAlterView *alterview = [[[NSBundle mainBundle]loadNibNamed:@"JFAlterView" owner:nil options:0] firstObject];
         [alterview configAlterViewWithmessage:[NSString stringWithFormat:@"您的订单总计扣减%@积分",self.total_price] title:@"支付确认提醒"];
@@ -251,7 +263,7 @@
                     [self.apiOrderSunmit setApiParamsWithGoodIds:self.goodsId
                                                     cart_session:self.cart_session
                                                             name:name
-                                                          mobile:self.phoneLabel.text
+                                                          mobile:phone
                                                          address:address];
                     [APIClient execute:self.apiOrderSunmit];
                     [weakAlter removeFromSuperview];
@@ -259,7 +271,6 @@
             }
         };
 
-    }
 }
 /**
  *收货地址按钮

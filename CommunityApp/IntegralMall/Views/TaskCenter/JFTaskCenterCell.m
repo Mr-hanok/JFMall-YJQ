@@ -37,7 +37,7 @@
     self.integralLabel.text = [NSString stringWithFormat:@"%@",model.totalIntegral];
     self.progressLabel.text = [NSString stringWithFormat:@"%@",@""];
     if ([model.isFinish isEqualToString:@"0"]) {//未完成
-        self.progressLabel.text = @"未完成";
+        self.progressLabel.text = @"";
     }
     if ([model.isFinish isEqualToString:@"1"]) {//一次性任务
         self.progressLabel.text = @"";

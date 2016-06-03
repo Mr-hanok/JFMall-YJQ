@@ -113,7 +113,9 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     JFTasKCenterModel *model = self.array[indexPath.row];
-    if ([model.isFinish isEqualToString:@"2"]) {
+    if ([model.key isEqualToString:@"key8"]) return;//新用户登陆任务不让点
+    
+    if ([model.isFinish isEqualToString:@"2"] ) {
         [HUDManager showWarningWithText:@"任务已完成,不要再点了!"];
         return;
     }

@@ -13,4 +13,5 @@
 @interface JFCommitOrderViewController : JFBaseViewController
 @property (nonatomic, strong) NSMutableArray *array;
 @property (nonatomic, copy) NSString *goodsId;
+@property (nonatomic, assign) BOOL isPrize;
 @end

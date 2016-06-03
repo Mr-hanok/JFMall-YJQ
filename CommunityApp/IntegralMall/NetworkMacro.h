@@ -64,3 +64,7 @@
 #define JFOrderDelAction               @"m/deleteOrder.htm"
 /**奖品列表*/
 #define JFPrizeListAction               @"m/myWinList.htm"
+/**中奖查询奖品信息 加入购物车前*/
+#define JFGetPrizeMsgAction               @"/m/getcartmsg.htm"
+/**接受奖品接口*/
+#define JFAcceptPrizeAction               @"m/acceptPrize.htm"

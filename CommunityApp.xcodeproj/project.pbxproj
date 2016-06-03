@@ -445,6 +445,7 @@
 		377710BE1CCDFB14002A0721 /* JFOrderInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377710BC1CCDFB14002A0721 /* JFOrderInfoCell.xib */; };
 		377710C11CCF4178002A0721 /* JFShoppingCarHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 377710C01CCF4178002A0721 /* JFShoppingCarHeadView.m */; };
 		377710C31CCF41AE002A0721 /* JFShoppingCarHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377710C21CCF41AE002A0721 /* JFShoppingCarHeadView.xib */; };
+		378305861D0112C800331765 /* APIPrizeMsgReuqest.m in Sources */ = {isa = PBXBuildFile; fileRef = 378305851D0112C800331765 /* APIPrizeMsgReuqest.m */; };
 		3787C1331CEAAE280017A3CC /* APISignRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C1321CEAAE280017A3CC /* APISignRequest.m */; };
 		3787C1361CEAAF380017A3CC /* APIIntegralDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C1351CEAAF380017A3CC /* APIIntegralDetailRequest.m */; };
 		3787C13A1CEAB1540017A3CC /* PageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787C1391CEAB1540017A3CC /* PageManager.m */; };
@@ -471,6 +472,7 @@
 		37A494F41CE2C3A2003F0E59 /* JFGoodsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A494F31CE2C3A2003F0E59 /* JFGoodsDetailModel.m */; };
 		37BEE9FE1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BEE9FC1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.m */; };
 		37BEE9FF1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37BEE9FD1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.xib */; };
+		37CA420E1D0124D800044287 /* APIAceptPrizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA420D1D0124D800044287 /* APIAceptPrizeRequest.m */; };
 		37CB1FB11CDC330500189576 /* JFIntegralRuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB1FAF1CDC330500189576 /* JFIntegralRuleCell.m */; };
 		37CB1FB21CDC330500189576 /* JFIntegralRuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37CB1FB01CDC330500189576 /* JFIntegralRuleCell.xib */; };
 		37CEA5EF1CD05B2000A7BC00 /* JFIntegralRuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CEA5ED1CD05B2000A7BC00 /* JFIntegralRuleViewController.m */; };
@@ -1539,6 +1541,8 @@
 		377710BF1CCF4178002A0721 /* JFShoppingCarHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFShoppingCarHeadView.h; sourceTree = "<group>"; };
 		377710C01CCF4178002A0721 /* JFShoppingCarHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFShoppingCarHeadView.m; sourceTree = "<group>"; };
 		377710C21CCF41AE002A0721 /* JFShoppingCarHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFShoppingCarHeadView.xib; sourceTree = "<group>"; };
+		378305841D0112C800331765 /* APIPrizeMsgReuqest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIPrizeMsgReuqest.h; sourceTree = "<group>"; };
+		378305851D0112C800331765 /* APIPrizeMsgReuqest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIPrizeMsgReuqest.m; sourceTree = "<group>"; };
 		3787C1311CEAAE280017A3CC /* APISignRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APISignRequest.h; sourceTree = "<group>"; };
 		3787C1321CEAAE280017A3CC /* APISignRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APISignRequest.m; sourceTree = "<group>"; };
 		3787C1341CEAAF380017A3CC /* APIIntegralDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIIntegralDetailRequest.h; sourceTree = "<group>"; };
@@ -1586,6 +1590,8 @@
 		37BEE9FB1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIntegralOrderDetailViewController.h; sourceTree = "<group>"; };
 		37BEE9FC1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIntegralOrderDetailViewController.m; sourceTree = "<group>"; };
 		37BEE9FD1CEC49E800E7D167 /* JFIntegralOrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFIntegralOrderDetailViewController.xib; sourceTree = "<group>"; };
+		37CA420C1D0124D800044287 /* APIAceptPrizeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIAceptPrizeRequest.h; sourceTree = "<group>"; };
+		37CA420D1D0124D800044287 /* APIAceptPrizeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIAceptPrizeRequest.m; sourceTree = "<group>"; };
 		37CB1FAE1CDC330500189576 /* JFIntegralRuleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFIntegralRuleCell.h; sourceTree = "<group>"; };
 		37CB1FAF1CDC330500189576 /* JFIntegralRuleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFIntegralRuleCell.m; sourceTree = "<group>"; };
 		37CB1FB01CDC330500189576 /* JFIntegralRuleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFIntegralRuleCell.xib; sourceTree = "<group>"; };
@@ -3979,6 +3985,10 @@
 				3787C1351CEAAF380017A3CC /* APIIntegralDetailRequest.m */,
 				37372EDB1D003BA900308462 /* APIPrizeListRequest.h */,
 				37372EDC1D003BA900308462 /* APIPrizeListRequest.m */,
+				378305841D0112C800331765 /* APIPrizeMsgReuqest.h */,
+				378305851D0112C800331765 /* APIPrizeMsgReuqest.m */,
+				37CA420C1D0124D800044287 /* APIAceptPrizeRequest.h */,
+				37CA420D1D0124D800044287 /* APIAceptPrizeRequest.m */,
 			);
 			path = "积分商城";
 			sourceTree = "<group>";
@@ -6089,6 +6099,7 @@
 				2B8A08861B7328A1008D3968 /* GoodsCollectionViewCell.m in Sources */,
 				29E648231BF33C0800EBEAB6 /* ProtocoViewController.m in Sources */,
 				2B54744D1B79DCF1005077C8 /* ConfirmOrderTableViewCell.m in Sources */,
+				37CA420E1D0124D800044287 /* APIAceptPrizeRequest.m in Sources */,
 				65AD72C41B315B040034D107 /* CartCountButton.m in Sources */,
 				65092CCA1B7098CD0048859E /* AfterSaleReasonTableViewCell.m in Sources */,
 				61D99E491C1590F3005C4097 /* UserAgent.m in Sources */,
@@ -6309,6 +6320,7 @@
 				0297187D1B29806E00BC58D3 /* QuestionContentMode.m in Sources */,
 				372613B11CED540A00FF092E /* JFOrderCollectCell.m in Sources */,
 				6573739F1B1DA1DB00ABCDBD /* BaseNavigationController.m in Sources */,
+				378305861D0112C800331765 /* APIPrizeMsgReuqest.m in Sources */,
 				2B8A08901B7345B4008D3968 /* CatagoryFooterCollectionReusableView.m in Sources */,
 				6543267F1B72F8E700A0EF86 /* GrouponListViewController.m in Sources */,
 				6503ADF11B2FEB9C00F9D5B1 /* NeighBorHoodModel.m in Sources */,

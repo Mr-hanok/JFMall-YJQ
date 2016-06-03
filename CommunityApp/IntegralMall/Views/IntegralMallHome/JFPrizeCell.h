@@ -28,6 +28,7 @@
 
 @property (strong, nonatomic) NSIndexPath *indexPath;
 @property (nonatomic, strong) JFPrizeModel *model;
+@property (nonatomic, copy) void (^callBackPrize)(NSString *pid,NSString *type);
 
 + (JFPrizeCell *)tableView:(UITableView *)tableView cellForRowInTableViewIndexPath:(NSIndexPath *)indexPath prize_type:(NSString *)prize_type;
 + (CGFloat)cellHeigthWithModel:(JFPrizeModel *)model;
