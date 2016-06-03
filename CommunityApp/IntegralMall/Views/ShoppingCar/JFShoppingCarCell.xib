@@ -56,7 +56,7 @@
                             <constraint firstAttribute="height" constant="22" id="SgV-sa-5C7"/>
                             <constraint firstAttribute="width" constant="22" id="Xiu-ix-Ygc"/>
                         </constraints>
-                        <state key="normal" backgroundImage="MinusIconNor"/>
+                        <state key="normal" backgroundImage="—"/>
                         <state key="highlighted" image="MinusIconPre"/>
                         <connections>
                             <action selector="addMinusBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DP1-ue-WqL"/>
@@ -70,7 +70,7 @@
                     </textField>
                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-Bi-1iD">
                         <rect key="frame" x="233" y="66" width="22" height="22"/>
-                        <state key="normal" backgroundImage="PlusIconNor"/>
+                        <state key="normal" backgroundImage="＋"/>
                         <state key="highlighted" image="PlusIconPre"/>
                         <connections>
                             <action selector="addMinusBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fwb-uE-Lr5"/>
@@ -142,10 +142,10 @@
     <resources>
         <image name="CheckBoxNo" width="15" height="15"/>
         <image name="CheckBoxOK" width="15" height="15"/>
-        <image name="MinusIconNor" width="26" height="26"/>
         <image name="MinusIconPre" width="26" height="26"/>
-        <image name="PlusIconNor" width="25" height="26"/>
         <image name="PlusIconPre" width="25" height="26"/>
         <image name="ShopCartWaresDefaultImg" width="104" height="104"/>
+        <image name="—" width="25" height="25"/>
+        <image name="＋" width="25" height="25"/>
     </resources>
 </document>
