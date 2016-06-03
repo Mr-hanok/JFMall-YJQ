@@ -33,7 +33,8 @@
 @property (nonatomic, strong) ApiAddGoodsNumInShopCar *apiAddNum;
 @property (nonatomic, strong) ApiDeleGoodsInShopCar   *apiDel;
 @property (nonatomic, strong) NSMutableArray *selectArray;
-
+@property (nonatomic, strong) NSIndexPath *indexpath;
+@property (nonatomic, assign) NSInteger goodsNum;
 @end
 
 @implementation JFShoppingCarViewController
@@ -80,8 +81,11 @@
         [self.array removeAllObjects];
         NSArray *stores = [sr.dic objectForKey:@"carts"];
         for (NSDictionary *store in stores) {
+            
             JFStoreInfoMode *storeModel = [JFStoreInfoMode initModelWithDic:store isEdite:self.isEdite];
-            [self.array addObject:storeModel];
+            if (storeModel.goodsArray.count>0) {
+                [self.array addObject:storeModel];
+            }
         }
         if (self.array.count == 0) {
             self.rightBarTitle.hidden =YES;
@@ -98,6 +102,17 @@
     if (api == self.apiDel) {//购物车商品删除
         [HUDManager showLoadingHUDView:self.view];
         [APIClient execute:self.apiShopCarInfo];
+    }
+    if (api == self.apiAddNum) {
+        //先获取到当期行数据源内容，改变数据源内容，刷新表格
+        JFStoreInfoMode *store = self.array[self.indexpath.section];
+        JFGoodsInfoModel *model = store.goodsArray[self.indexpath.row];
+        model.goodsNum = self.goodsNum;
+        
+        [self.tableview reloadRowsAtIndexPaths:@[self.indexpath] withRowAnimation:UITableViewRowAnimationNone];
+        //计算总价
+        [self instalTotalPrice];
+
     }
 }
 
@@ -205,29 +220,25 @@
 #pragma mark - JFShoppingCarCellDelegate
 /*加减按钮*/
 -(void)shoppingCarCell:(JFShoppingCarCell *)cell andFlag:(int)flag{
-    NSIndexPath *index = [self.tableview indexPathForCell:cell];
+     self.indexpath = [self.tableview indexPathForCell:cell];
     //先获取到当期行数据源内容，改变数据源内容，刷新表格
-    JFStoreInfoMode *store = self.array[index.section];
-    JFGoodsInfoModel *model = store.goodsArray[index.row];
+    JFStoreInfoMode *store = self.array[self.indexpath.section];
+    JFGoodsInfoModel *model = store.goodsArray[self.indexpath.row];
     if (flag == 101) {
         //减数量
         if (model.goodsNum == 1) {
             [HUDManager showWarningWithText:@"商品数量不能再减少了~"];
             return;
         }
-        if (model.goodsNum > 1) model.goodsNum --;
+        if (model.goodsNum > 1) self.goodsNum = model.goodsNum -1;
     }
         //加数量
-    if (flag == 102) model.goodsNum ++;
+    if (flag == 102) self.goodsNum = model.goodsNum +1;
     //发送加减数量请求
     [HUDManager showLoadingHUDView:self.view];
-    NSInteger a = model.goodsNum;
-    [self.apiAddNum setApiParamsWithGoodsInfoId:model.goodsId count:[NSString stringWithFormat:@"%ld",a]];
+    [self.apiAddNum setApiParamsWithGoodsInfoId:model.goodsId count:[NSString stringWithFormat:@"%ld",self.goodsNum]];
     [APIClient execute:self.apiAddNum];
-    
-    [self.tableview reloadRowsAtIndexPaths:@[index] withRowAnimation:UITableViewRowAnimationNone];
-    //计算总价
-    [self instalTotalPrice];
+
 }
 /**cell删除按钮*/
 -(void)shoppingCarCell:(JFShoppingCarCell *)cell andDelBtn:(UIButton *)delBtn{
