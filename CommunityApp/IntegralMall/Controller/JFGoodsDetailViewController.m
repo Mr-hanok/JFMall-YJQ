@@ -65,17 +65,16 @@
 
     //上拉 下拉
     MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        if (self.scrollview.contentOffset.y>APP_SCREEN_WIDTH+44*5+self.specsViewHeightConstraint.constant +50) {
-            [self.scrollview.mj_footer endRefreshing];
-            return ;
-        }
-        self.scrollview.contentSize = CGSizeMake(APP_SCREEN_WIDTH, APP_SCREEN_WIDTH+APP_SCREEN_HEIGHT +44*5+self.specsViewHeightConstraint.constant-50);
-        self.contentViewHeightConstraint.constant = APP_SCREEN_WIDTH+APP_SCREEN_HEIGHT +44*5+self.specsViewHeightConstraint.constant-50;
-        self.webViewHeightConstraint.constant = APP_SCREEN_HEIGHT-50;
-        self.scrollview.contentOffset = CGPointMake(0, APP_SCREEN_WIDTH+44*5+self.specsViewHeightConstraint.constant);
+        self.scrollview.scrollEnabled = NO;
+        CGFloat upHeigth = APP_SCREEN_WIDTH+44*5+self.specsViewHeightConstraint.constant;
+        CGFloat webHeight = APP_SCREEN_HEIGHT-50;
+        
+        self.webViewHeightConstraint.constant = webHeight-64;
+        self.scrollview.contentSize = CGSizeMake(APP_SCREEN_WIDTH, webHeight+upHeigth);
+        self.contentViewHeightConstraint.constant = webHeight + upHeigth;
+        self.scrollview.contentOffset = CGPointMake(0, upHeigth);
         [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.goodsModel.goods_url]]];
         [self.scrollview.mj_footer endRefreshing];
-        self.scrollview.scrollEnabled = NO;
     }];
     self.scrollview.mj_footer = footer;
     
@@ -254,7 +253,7 @@
         JFGoodsSpec *spec = model.goods_specs[i];
         JFGoodsGsp *gsp = spec.gsps[0];
         spec.checked = gsp.gspId;
-        JFGoodsSpecsView *sv = [[JFGoodsSpecsView alloc]initWithFrame:CGRectMake(0, 44*i, APP_SCREEN_WIDTH, 44)];
+        JFGoodsSpecsView *sv = [[JFGoodsSpecsView alloc]initWithFrame:CGRectMake(0, self.specsViewHeightConstraint.constant, APP_SCREEN_WIDTH, 44)];
         sv.delegate = self;
         sv.tag = i;
         sv.itemDict = spec;

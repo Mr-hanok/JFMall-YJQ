@@ -121,6 +121,8 @@ CGFloat const itemMargin = 20;
 
 - (void)selectionAction:(UIButton *)sender
 {
+    if (sender.selected) return;
+    
     sender.selected = !sender.selected;
     NSNumber *valueId;
     if ( [_itemDict.gsps count]>0) {

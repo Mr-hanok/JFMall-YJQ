@@ -171,6 +171,11 @@
     CGSize itemSize ;
     if (section == 0) {
         itemSize=CGSizeMake(APP_SCREEN_WIDTH, 164);
+        JFCategorysModel *model = self.categorysArray[section];
+        if (model.goodsList.count == 0) {
+            return CGSizeMake(APP_SCREEN_WIDTH, 131);
+        }
+        
     }else{
         itemSize=CGSizeMake(APP_SCREEN_WIDTH, 35);
     }

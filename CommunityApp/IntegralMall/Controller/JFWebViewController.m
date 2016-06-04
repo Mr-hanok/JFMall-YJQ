@@ -34,9 +34,12 @@
     
     LoginConfig *login = [LoginConfig Instance];
     NSString *uid = [login userID];
-    NSString *urlStr = [NSString stringWithFormat:@"http://d.bjyijiequ.com/mallyjq/wxr/activityapp1.htm?userId=%@&pub_type=3",uid];
+    
+    //http://d.bjyijiequ.com/mallyjq/wxr/activityapp1.htm
+    //http://d.bjyijiequ.com/mallyjq/wxr/activityapp2.htm
+    NSString *urlStr = [NSString stringWithFormat:@"%@?userId=%@&pub_type=3",self.bannerModel.jump_url,uid];
     NSURL *url = [NSURL URLWithString:urlStr];
-    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
+    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.];
     [self.webview loadRequest:request];
 }
 -(void)viewWillDisappear:(BOOL)animated{
@@ -54,10 +57,10 @@
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"WebKitDiskImageCacheEnabled"];    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"WebKitOfflineWebApplicationCacheEnabled"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
-//-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-//    [HUDManager hideHUDView];
-//    [HUDManager showWarningWithText:kDefaultWebErrorString];
-//}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [HUDManager hideHUDView];
+    [HUDManager showWarningWithText:kDefaultWebErrorString];
+}
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
     [HUDManager hideHUDView];
@@ -66,12 +69,24 @@
         [self pushWithVCClass:[JFPrizeListViewController class] properties:@{@"title":@"中奖纪录",@"active_type":@"1"}];
         return NO;
     }
-    if ([url hasPrefix:@"app://mactivity1/award"]) {//实物奖品去领奖
+    if ([url hasPrefix:@"app://mactivity2/list"]) {//我的中奖纪录->刮一刮
+        [self pushWithVCClass:[JFPrizeListViewController class] properties:@{@"title":@"中奖纪录",@"active_type":@"2"}];
+        return NO;
+    }
+
+    if ([url hasPrefix:@"app://mactivity1/award"]) {//大转盘实物奖品去领奖
         // app://mactivity1/award?prize_type=1&logid=145
         NSArray *logids =[url componentsSeparatedByString:@"logid="];
         self.logid = [logids lastObject];
         [self getPrizeMsgAndAddToShopCar];
     }
+    if ([url hasPrefix:@"app://mactivity2/award"]) {//大转盘实物奖品去领奖
+        // app://mactivity1/award?prize_type=1&logid=145
+        NSArray *logids =[url componentsSeparatedByString:@"logid="];
+        self.logid = [logids lastObject];
+        [self getPrizeMsgAndAddToShopCar];
+    }
+
     
     return YES;
 }

@@ -19,7 +19,7 @@
     if (section == 0) {
         self.bannerViewHeightConstrain.constant = 130.f;
         self.adVIew.hidden = NO;
-        ad = [AdView adScrollViewWithFrame:CGRectMake(0, 0, APP_SCREEN_WIDTH, 129) imageLinkURL:array placeHoderImageName:@"AdSlideDefaultImg" pageControlShowStyle:UIPageControlShowStyleCenter];
+        ad = [AdView adScrollViewWithFrame:CGRectMake(0, 0, APP_SCREEN_WIDTH, 129.5) imageLinkURL:array placeHoderImageName:@"AdSlideDefaultImg" pageControlShowStyle:UIPageControlShowStyleCenter];
         ad.adMoveTime = 2.5f;
         __weak typeof(self) weakself = self;
         ad.callBack = ^(NSInteger index,NSString * imageURL)

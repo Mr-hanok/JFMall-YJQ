@@ -16,8 +16,8 @@
 #define SDKKey_Msg                    @"description"
 #define SDKKey_Status                 @"code"
 
-#define defaultWebAPITimeOutSeconds   30
-#define defaultImageAPITimeOutSeconds 45
+#define defaultWebAPITimeOutSeconds   18
+#define defaultImageAPITimeOutSeconds 25
 
 typedef enum ApiAddressType {
     kApiAddressTest                         =           1,      // 开发环境
