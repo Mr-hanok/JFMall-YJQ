@@ -14,7 +14,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="236" height="336"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jf-testgood" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-x3-c7O">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShopCartWaresDefaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-x3-c7O">
                         <rect key="frame" x="0.0" y="0.0" width="236" height="236"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="zAN-x3-c7O" secondAttribute="height" multiplier="1:1" id="P0h-sG-6GP"/>
@@ -98,6 +98,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="jf-testgood" width="173" height="172"/>
+        <image name="ShopCartWaresDefaultImg" width="104" height="104"/>
     </resources>
 </document>

@@ -46,7 +46,7 @@
     
     LoginConfig *login = [LoginConfig Instance];
     self.nameLabel.text = [login userName];
-    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:[login userIcon]] placeholderImage:[UIImage imageNamed:@"ShopCartWaresDefaultImg"]];
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:[login userIcon]] placeholderImage:[UIImage imageNamed:@"head"]];
 
 }
 

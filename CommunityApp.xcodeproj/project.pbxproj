@@ -410,7 +410,6 @@
 		372613C21CEDB66F00FF092E /* JFOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 372613C11CEDB66F00FF092E /* JFOrderModel.m */; };
 		372D82451CC4BE88003B816A /* IntegralMallHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372D82431CC4BE88003B816A /* IntegralMallHomeViewController.m */; };
 		372D82461CC4BE88003B816A /* IntegralMallHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372D82441CC4BE88003B816A /* IntegralMallHomeViewController.xib */; };
-		372F2DD11CC5FEA200F91431 /* JFtest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372F2DD01CC5FEA200F91431 /* JFtest.xcassets */; };
 		372F2DD61CC606CC00F91431 /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F2DD51CC606CC00F91431 /* AdView.m */; };
 		37372EDD1D003BA900308462 /* APIPrizeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37372EDC1D003BA900308462 /* APIPrizeListRequest.m */; };
 		37461D461CF42F2300AD440D /* PersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37461D441CF42F2300AD440D /* PersonalCenterViewController.m */; };
@@ -1489,7 +1488,6 @@
 		372D82421CC4BE88003B816A /* IntegralMallHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralMallHomeViewController.h; sourceTree = "<group>"; };
 		372D82431CC4BE88003B816A /* IntegralMallHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralMallHomeViewController.m; sourceTree = "<group>"; };
 		372D82441CC4BE88003B816A /* IntegralMallHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntegralMallHomeViewController.xib; sourceTree = "<group>"; };
-		372F2DD01CC5FEA200F91431 /* JFtest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JFtest.xcassets; sourceTree = "<group>"; };
 		372F2DD41CC606CC00F91431 /* AdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
 		372F2DD51CC606CC00F91431 /* AdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
 		37372EDB1D003BA900308462 /* APIPrizeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIPrizeListRequest.h; sourceTree = "<group>"; };
@@ -3966,7 +3964,6 @@
 			children = (
 				37D5D4EE1CC087EA00B2FE18 /* ManJIanImage.xcassets */,
 				37D2ABB51CC5D8EF00BA82E1 /* JFHomeImage.xcassets */,
-				372F2DD01CC5FEA200F91431 /* JFtest.xcassets */,
 				377710A11CCDBE1B002A0721 /* JFTaskCenter.xcassets */,
 			);
 			path = ImageSource;
@@ -5844,7 +5841,6 @@
 				25A7C2B11B7338A20081EB89 /* PersonalCenterWeiXinLoginViewController.xib in Resources */,
 				65AD72C51B315B040034D107 /* CartCountButton.xib in Resources */,
 				258222211B461E3A0077A1ED /* BuildingsServicesBuildingInfoLayoutCollectionViewCell.xib in Resources */,
-				372F2DD11CC5FEA200F91431 /* JFtest.xcassets in Resources */,
 				2BB6A71A1B8C5C8A00BCC822 /* GrouponShopListTableViewCell.xib in Resources */,
 				2B0B38B01B60D6A80050788A /* GrouponPurchaseSuccessViewController.xib in Resources */,
 				297E611C1C2A81B70018BDF1 /* OpenDoorSettingViewController.xib in Resources */,

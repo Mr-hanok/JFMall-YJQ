@@ -19,7 +19,7 @@
                         <constraint firstAttribute="height" constant="105" id="Fbb-qO-rYK"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jf-testhead" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-XT-jrL">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-XT-jrL">
                     <rect key="frame" x="25" y="10" width="62" height="62"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xOy-XT-jrL" secondAttribute="height" multiplier="1:1" id="5GG-aD-QUY"/>
@@ -302,12 +302,12 @@
         </collectionReusableView>
     </objects>
     <resources>
+        <image name="head" width="79" height="79"/>
         <image name="jf-headbg" width="280" height="76"/>
         <image name="jf-homecomvert" width="26" height="27"/>
         <image name="jf-homedetail" width="23" height="27"/>
         <image name="jf-homeexchange" width="18" height="20"/>
         <image name="jf-homehot" width="18" height="18"/>
         <image name="jf-homework" width="25" height="27"/>
-        <image name="jf-testhead" width="63" height="63"/>
     </resources>
 </document>
