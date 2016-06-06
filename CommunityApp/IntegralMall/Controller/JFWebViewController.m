@@ -79,12 +79,14 @@
         NSArray *logids =[url componentsSeparatedByString:@"logid="];
         self.logid = [logids lastObject];
         [self getPrizeMsgAndAddToShopCar];
+        return NO;
     }
     if ([url hasPrefix:@"app://mactivity2/award"]) {//大转盘实物奖品去领奖
         // app://mactivity1/award?prize_type=1&logid=145
         NSArray *logids =[url componentsSeparatedByString:@"logid="];
         self.logid = [logids lastObject];
         [self getPrizeMsgAndAddToShopCar];
+        return NO;
     }
 
     
